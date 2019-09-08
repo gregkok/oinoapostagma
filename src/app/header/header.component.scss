@@ -1,0 +1,36 @@
+div {
+    display: block;
+}
+
+.containerz {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  
+  .rowz {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      order: 1;
+      flex-grow: 1;
+    }
+
+    .menu {
+      order: 2;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+img {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  vertical-align: middle;
+  border-style: none;
+  cursor: pointer;
+}
