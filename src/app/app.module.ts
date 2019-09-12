@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { FirstImageComponent } from './first-image/first-image.component';
-import { SecondImageComponent } from './second-image/second-image.component';
+import { FirstImageComponent } from './main/first-image/first-image.component';
+import { SecondImageComponent } from './main/second-image/second-image.component';
+import { MainComponent } from './main/main.component';
+import { LocationComponent } from './main/location/location.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { SecondImageComponent } from './second-image/second-image.component';
     HeaderComponent,
     FirstImageComponent,
     SecondImageComponent,
+    MainComponent,
+    LocationComponent,
   ],
   imports: [
     BrowserModule

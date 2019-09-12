@@ -1,0 +1,150 @@
+.location-and-menu {
+  background-color: #e4f1de;
+
+  .containerz {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .flex-container {
+    text-align: center;
+
+    .welcome-to-oinoapostagma {
+      width: 50%;
+
+      padding: 47px 30px 30px;
+      color: #212529;
+
+      p {
+        font-family: sans-serif;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+
+      hr {
+        width: 23px;
+        height: 0.1px;
+        opacity: 0.25;
+        border: 1px solid #000;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .menu-link {
+        margin: 40px 0 0;
+        padding: 0;
+
+        a {
+          color: #000;
+          border-bottom: 1px solid #000;
+          text-decoration: none;
+          background-color: transparent;
+          cursor: pointer;
+          font-family: Gochi Hand, cursive;
+          margin-bottom: 43px;
+
+          .link-wrapper {
+            background: #000;
+            display: inline-block;
+            position: relative;
+            padding: 8px 23px 0;
+
+            .menu {
+              color: #fff;
+              font-size: 32px;
+              letter-spacing: -0.3px;
+              z-index: 1;
+              position: relative;
+            }
+          }
+          .link-wrapper:after {
+            background: inherit;
+            content: "";
+            display: block;
+            height: 15%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            right: 0;
+            -webkit-transform: skewY(-1.5deg);
+            -o-transform: skewY(-1.5deg);
+            transform: skewY(-1.5deg);
+            -webkit-transform-origin: 100%;
+            -o-transform-origin: 100%;
+            transform-origin: 100%;
+          }
+        }
+      }
+    }
+
+    .we-are-here {
+      width: 50%;
+      padding: 50px 0;
+
+      .location-container {
+        margin-top: 20px;
+        min-width: 150px;
+
+        h4 {
+          font-size: 28px;
+          font-weight: 400;
+          letter-spacing: -0.3px;
+          color: #000;
+          font-family: Gochi Hand, cursive;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1.33;
+          letter-spacing: 0.8px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+
+    .contact-container {
+      margin-top: 3rem;
+
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+
+        a {
+            color: #000;
+    border-bottom: 1px solid #000;
+        }
+      }
+    }
+
+    .container-text {
+      max-width: 450px;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .title-container {
+        margin-bottom: 27px;
+        font-family: "Gochi Hand", cursive;
+
+        .title {
+          font-size: 30px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          color: #424242;
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
