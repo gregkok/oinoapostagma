@@ -9,9 +9,11 @@ div {
   margin-right: auto;
   margin-left: auto;
   
+  
   .rowz {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     .logo {
       order: 1;
@@ -28,7 +30,7 @@ div {
 
 img {
   display: inline-block;
-  width: 75px;
+  width: 120px;
   height: 75px;
   vertical-align: middle;
   border-style: none;

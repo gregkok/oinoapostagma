@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+.image {
+  display: flex;
+  position: inherit;
+}
+
+img {
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+}
