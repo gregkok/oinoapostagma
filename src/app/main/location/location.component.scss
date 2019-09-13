@@ -1,6 +1,10 @@
-.location-and-menu {
-  background-color: #e4f1de;
+@media (min-width: 768px) {
+  .location-and-menu {
+    background-color: #e4f1de;
+  }
+}
 
+@media (min-width: 768px) {
   .containerz {
     max-width: 1140px;
     width: 100%;
@@ -9,142 +13,173 @@
     margin-right: auto;
     margin-left: auto;
   }
+}
 
+@media (max-width: 767.98px) {
+  .containerz {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) {
   .flex-container {
     text-align: center;
+  }
+}
 
-    .welcome-to-oinoapostagma {
-      width: 50%;
+@media (min-width: 768px) {
+  .menu-min-width {
+    width: 50%;
+  }
+}
 
-      padding: 47px 30px 30px;
-      color: #212529;
+.containerz {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-      p {
-        font-family: sans-serif;
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-      }
+.menu-link-wrapper {
+  padding: 47px 30px 30px;
+  text-align: center;
+  background-color: #e4f1de;
+  color: #424242;
+}
 
-      hr {
-        width: 23px;
-        height: 0.1px;
-        opacity: 0.25;
-        border: 1px solid #000;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
+.container-small {
+  max-width: 438px;
+}
 
-      .menu-link {
-        margin: 40px 0 0;
-        padding: 0;
+.title-container {
+  margin-bottom: 27px;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+}
 
-        a {
-          color: #000;
-          border-bottom: 1px solid #000;
-          text-decoration: none;
-          background-color: transparent;
-          cursor: pointer;
-          font-family: Gochi Hand, cursive;
-          margin-bottom: 43px;
+.title {
+  text-align: center;
+}
 
-          .link-wrapper {
-            background: #000;
-            display: inline-block;
-            position: relative;
-            padding: 8px 23px 0;
+.title-container .title h1 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
-            .menu {
-              color: #fff;
-              font-size: 32px;
-              letter-spacing: -0.3px;
-              z-index: 1;
-              position: relative;
-            }
-          }
-          .link-wrapper:after {
-            background: inherit;
-            content: "";
-            display: block;
-            height: 15%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            right: 0;
-            -webkit-transform: skewY(-1.5deg);
-            -o-transform: skewY(-1.5deg);
-            transform: skewY(-1.5deg);
-            -webkit-transform-origin: 100%;
-            -o-transform-origin: 100%;
-            transform-origin: 100%;
-          }
-        }
-      }
+.title-container h2 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+
+  text-transform: uppercase;
+  margin: 0;
+}
+
+hr {
+  width: 23px;
+  height: 0.1px;
+  opacity: 0.25;
+  border: 1px solid #000;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu-link {
+  margin: 40px 0 0;
+  padding: 0;
+  margin-bottom: 43px;
+}
+
+a {
+  color: #000;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: Gochi Hand, cursive;
+  margin-bottom: 43px;
+
+  .link-wrapper {
+    background: #000;
+    display: inline-block;
+    position: relative;
+    padding: 8px 23px 0;
+
+    .menu {
+      color: #fff;
+      font-size: 32px;
+      letter-spacing: -0.3px;
+      z-index: 1;
+      position: relative;
     }
+  }
+  .link-wrapper:after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    -webkit-transform: skewY(-2.5deg);
+    -o-transform: skewY(-2.5deg);
+    transform: skewY(-2.5deg);
+    -webkit-transform-origin: 100%;
+    -o-transform-origin: 100%;
+    transform-origin: 100%;
+  }
+}
 
-    .we-are-here {
-      width: 50%;
-      padding: 50px 0;
+.we-are-here {
+  padding: 50px 0;
+  color: #424242;
+}
 
-      .location-container {
-        margin-top: 20px;
-        min-width: 150px;
+.location-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  min-width: 150px;
+  width: 50%;
+  text-align: center;
+  
 
-        h4 {
-          font-size: 28px;
-          font-weight: 400;
-          letter-spacing: -0.3px;
-          color: #000;
-          font-family: Gochi Hand, cursive;
-        }
+  h4 {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    color: #000;
+    font-family: Gochi Hand, cursive;
+  }
 
-        p {
-          font-size: 16px;
-          line-height: 1.33;
-          letter-spacing: 0.8px;
-          color: rgba(0, 0, 0, 0.4);
-        }
-      }
-    }
+  p {
+    font-size: 16px;
+    line-height: 1.33;
+    letter-spacing: 0.8px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
 
-    .contact-container {
-      margin-top: 3rem;
+.contact-container {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 17px;
 
-      p {
-        margin-top: 0;
-        margin-bottom: 1rem;
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 
-        a {
-            color: #000;
-    border-bottom: 1px solid #000;
-        }
-      }
-    }
-
-    .container-text {
-      max-width: 450px;
-      width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
-
-      .title-container {
-        margin-bottom: 27px;
-        font-family: "Gochi Hand", cursive;
-
-        .title {
-          font-size: 30px;
-          font-weight: 400;
-          letter-spacing: 1px;
-          color: #424242;
-          text-transform: uppercase;
-          margin: 0;
-        }
-      }
+    a {
+      color: #000;
+      border-bottom: 1px solid #000;
     }
   }
 }

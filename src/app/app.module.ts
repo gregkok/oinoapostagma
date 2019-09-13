@@ -7,6 +7,7 @@ import { FirstImageComponent } from './main/first-image/first-image.component';
 import { SecondImageComponent } from './main/second-image/second-image.component';
 import { MainComponent } from './main/main.component';
 import { LocationComponent } from './main/location/location.component';
+import { MapComponent } from './main/map/map.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { LocationComponent } from './main/location/location.component';
     SecondImageComponent,
     MainComponent,
     LocationComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule
