@@ -8,6 +8,9 @@ import { SecondImageComponent } from './main/second-image/second-image.component
 import { MainComponent } from './main/main.component';
 import { LocationComponent } from './main/location/location.component';
 import { MapComponent } from './main/map/map.component';
+import { IngredientsComponent } from './main/ingredients/ingredients.component';
+import { IngredientGridComponent } from './main/ingredient-grid/ingredient-grid.component';
+import { SocialComponent } from './main/social/social.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { MapComponent } from './main/map/map.component';
     MainComponent,
     LocationComponent,
     MapComponent,
+    IngredientsComponent,
+    IngredientGridComponent,
+    SocialComponent,
   ],
   imports: [
     BrowserModule
