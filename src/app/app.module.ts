@@ -11,6 +11,7 @@ import { MapComponent } from './main/map/map.component';
 import { IngredientsComponent } from './main/ingredients/ingredients.component';
 import { IngredientGridComponent } from './main/ingredient-grid/ingredient-grid.component';
 import { SocialComponent } from './main/social/social.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SocialComponent } from './main/social/social.component';
     IngredientsComponent,
     IngredientGridComponent,
     SocialComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule
