@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 div {
     display: block;
+}
+
+.banner {
+  background: black;
+  padding-top: 14px;
+  padding-bottom: 30px;
 }
 
 .containerz {
@@ -37,4 +47,9 @@ img {
   vertical-align: middle;
   border-style: none;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
