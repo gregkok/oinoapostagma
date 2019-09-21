@@ -1,0 +1,66 @@
+.intro {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.containerz {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.banner {
+    padding-top: 14px;
+    padding-bottom: 30px;
+    color: black;
+  }
+
+.page-header {
+  margin-bottom: 27px;
+  font-family: Gochi Hand, cursive;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  color: #424242;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.tittle {
+  font-size: 30px;
+}
+
+.menu-container {
+    width: 100%;
+    background-color: #e4f1de;
+}
+
+@media (min-width: 576px) {
+  .containerz {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerz {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containerz {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .containerz {
+    max-width: 1140px;
+  }
+}
+.container-small {
+    max-width: 438px;
+  }

@@ -51,9 +51,9 @@ img {
 }
 
 @media (min-width: 768px) {
-.alternate :nth-child(1) {
-    order: 2
-}
+  .alternate :nth-child(1) {
+    order: 2;
+  }
 }
 
 @media (min-width: 768px) {

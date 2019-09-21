@@ -3,13 +3,16 @@
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 .banner {
   background: black;
   padding-top: 14px;
   padding-bottom: 30px;
+  app-header a {
+    color: black;
+  }
 }
 
 .containerz {
@@ -18,8 +21,7 @@ div {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  
-  
+
   .rowz {
     display: flex;
     align-items: center;
@@ -34,7 +36,6 @@ div {
       font-family: Gochi Hand, cursive;
       font-size: 32px;
       order: 2;
-      color: white;
       cursor: pointer;
     }
   }
