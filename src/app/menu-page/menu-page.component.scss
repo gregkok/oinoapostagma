@@ -1,7 +1,6 @@
 .intro {
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 40px;
 }
 
 .containerz {
@@ -11,12 +10,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-
-.banner {
-    padding-top: 14px;
-    padding-bottom: 30px;
-    color: black;
-  }
 
 .page-header {
   margin-bottom: 27px;
@@ -29,13 +22,67 @@
   margin: 0;
 }
 
-.tittle {
-  font-size: 30px;
+.bg-green {
+  background-color: #e4f1de;
 }
 
-.menu-container {
-    width: 100%;
-    background-color: #e4f1de;
+.other {
+  padding-bottom: 0;
+}
+
+.section {
+  padding: 0 22px 22px;
+  border-top: 38px solid #fff;
+}
+
+.section .h4 {
+  margin-right: 6px;
+  background: #000;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  color: #fff;
+  padding: 6px 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 13px 0;
+}
+
+.h6 {
+  font-family: Gochi Hand, cursive;
+  margin-right: 6px;
+  font-size: 20px;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.dots:before {
+  content: "..................................................................................................................";
+  letter-spacing: 0.1px;
+  color: #cecece;
+  white-space: nowrap;
+}
+
+.dots {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  font-size: 18px;
+  position: relative;
+  top: -4px;
+}
+
+.price {
+  margin-left: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: .3px;
+  color: #424242;
+  margin-bottom: 1px;
 }
 
 @media (min-width: 576px) {
@@ -62,5 +109,32 @@
   }
 }
 .container-small {
-    max-width: 438px;
+  max-width: 438px;
+}
+
+@media (min-width: 768px) {
+  .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+}
+
+@media (min-width: 768px) {
+  .sectionz {
+    width: 33.33%;
+    border-top: none;
+  }
+}
+
+.item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}

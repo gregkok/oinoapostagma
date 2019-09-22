@@ -3,9 +3,37 @@
         <h1 class="tittle">Welcome to Oinoapostagma</h1>
     </div>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae atque accusamus. Excepturi quisquam quis ut, quia sint aliquam dolor ducimus aut laboriosam officia reprehenderit vero totam cumque similique at.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae atque accusamus. Excepturi quisquam
+        quis ut, quia sint aliquam dolor ducimus aut laboriosam officia reprehenderit vero totam cumque similique at.
     </p>
 </div>
-<div class="menu-container"></div>
+<div>
+    <div class="bg-green menu-wrapper">
+        <div class="sectionz section other" *ngFor=" let items of menuObjectOne">
+            <div *ngFor="let item of items">
+                <h4 class="h4">{{item.type}}</h4>
+                <div class="item-row">
+
+                    <h6 class="h6">{{item.list.name}}</h6>
+                    <span class="dots"></span>
+                    <div class="price">{{item.list.price}}</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="sectionz section other" *ngFor=" let items of menuObjectTwo">
+            <div *ngFor="let item of items">
+                <h4 class="h4">{{item.type}}</h4>
+                <div class="item-row">
+
+                    <h6 class="h6">{{item.list.name}}</h6>
+                    <span class="dots"></span>
+                    <div class="price">{{item.list.price}}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <app-map></app-map>
