@@ -52,14 +52,14 @@
 .h6 {
   font-family: Gochi Hand, cursive;
   margin-right: 6px;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.1px;
   white-space: nowrap;
   margin: 0;
 }
 
 .dots:before {
-  content: "..................................................................................................................";
+  content: "....................................................................................................................................................................................................................................";
   letter-spacing: 0.1px;
   color: #cecece;
   white-space: nowrap;
@@ -79,11 +79,38 @@
   margin-left: 6px;
   font-size: 15px;
   font-weight: 700;
-  white-space: nowrap;
-  letter-spacing: .3px;
+  white-space: wrap;
+  letter-spacing: 0.3px;
   color: #424242;
   margin-bottom: 1px;
 }
+
+.salads {
+  text-align: center;
+  margin: 0 auto 30px;
+  opacity: 1;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #424242;
+  margin-bottom: 12px;
+}
+
+.tigani p, .mezedakia p {
+  margin-top: -7px;
+}
+
+.salads p {
+  margin-bottom: 5px;
+}
+// p {
+//   font-size: 16px;
+//   line-height: 1.33;
+//   letter-spacing: 0.8px;
+//   color: rgba(0, 0, 0, 0.4);
+// }
 
 @media (min-width: 576px) {
   .containerz {
@@ -126,6 +153,11 @@
 @media (min-width: 768px) {
   .sectionz {
     width: 33.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionzone {
     border-top: none;
   }
 }
