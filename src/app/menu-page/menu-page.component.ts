@@ -8,7 +8,7 @@ import { sections } from '../../app/app.menu-model';
 })
 
 export class MenuPageComponent implements OnInit {
-  protected menu = sections;
+  public menu = sections;
   constructor() { }
 
   ngOnInit() {
