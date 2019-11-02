@@ -9,6 +9,7 @@ div {
 .image {
   display: flex;
   position: inherit;
+  align-items: center;
 }
 
 img {
@@ -20,6 +21,73 @@ img {
 .parea-tittle {
   z-index: 10;
   background-color: none;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 40px;
+}
+
+.tag-word {
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  font-family: Gochi Hand, cursive;
+  color: white;
+
+  #delay {
+    animation-timing-function: ease;
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+    animation: mymove 1.5s;
+    font-size: 1.8rem;
+    @media (min-width: 500px) {
+      font-size: 2.6rem;
+    }
+    @media (min-width: 868px) {
+      font-size: 4.6rem;
+    }
+    
+    @keyframes mymove {
+      from {
+        opacity: 0;
+        font-size: 0px;
+      }
+      to {
+        opacity: 1;
+        font-size: 1.8rem;
+      }
+    }
+  }
+ 
+  @media (min-width: 500px) {
+    .tag-word p {
+      @keyframes mymove {
+        from {
+          opacity: 0;
+          font-size: 0px;
+        }
+        to {
+          opacity: 1;
+          font-size: 2.6rem;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 868px) {
+    .tag-word p {
+      @keyframes mymove {
+        from {
+          opacity: 0;
+          font-size: 0px;
+        }
+        to {
+          opacity: 1;
+          font-size: 4.6rem;
+        }
+      }
+    }
+  }
 }
