@@ -11,7 +11,8 @@ div {
   padding-top: 14px;
   padding-bottom: 7px;
   
-  app-header a {
+  a {
+    text-decoration: none;
     color: white;
   }
 }
@@ -23,6 +24,10 @@ div {
   opacity: .7;
   margin: 0;
   font-size: 10px;
+  a {
+    border-bottom: 1px solid white;
+    color: white;
+  }
 }
 
 .containerz {
@@ -60,7 +65,4 @@ img {
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
+
