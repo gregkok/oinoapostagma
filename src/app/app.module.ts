@@ -17,13 +17,18 @@ import { MenuPageComponent } from './menu-page/menu-page.component';
 import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
-  { path: '', component: MainComponent },
   { path: 'menu', component: MenuPageComponent },
-  { path: 'about', component: AboutComponent }
+  { path: 'about', component: AboutComponent },
+  { path: 'home', component: MainComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
+  ],
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -38,10 +43,6 @@ const appRoutes: Routes = [
     FooterComponent,
     MenuPageComponent,
     AboutComponent,
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

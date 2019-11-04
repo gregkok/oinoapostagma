@@ -130,7 +130,7 @@ export const sections: Section[] = [
         ]
     },
     {
-        sectionName: 'Σχάρα',
+        sectionName: 'Σχαρα',
         sectionContent: [
             {
                 name: 'Ποικιλία κρεατικών',

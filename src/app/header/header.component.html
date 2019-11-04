@@ -1,14 +1,25 @@
 <header class="banner">
+    <!-- <div *ngIf="isMenuClicked">
+        <div class="menu-sheet">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi tempore deleniti odit
+            eveniet odio repellendus iste repudiandae! Consequuntur, est voluptates similique excepturi nemo consequatur
+            animi ut iure doloribus voluptatum iusto.</div>
+    </div> -->
     <div class="containerz">
         <div class="rowz">
             <div class="logo">
-                <div >
+                <div>
                     <a routerLink="/"><img src="assets/images/OinoApostagma-Logo-06-vector-1.png" alt="logo"></a>
                 </div>
                 <p class="tel-number"><a href="tel:+30-211-404-2680">+30 2114042680</a></p>
             </div>
-            <div class="menu">
-                <div class="text"><a routerLink="/menu">Menu</a></div>
+            <div class="saber-grill">
+                <div id="nav-container" (click)="onMenuClick()">
+                    <div class="toggle-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div><!-- /toggle-icon -->
+                </div><!-- /nav-container -->
             </div>
         </div>
     </div>
