@@ -1,15 +1,16 @@
-
-body{
-	background:#222;
-	padding: 100px;
-	font-size: 8px !important; /*increase me to scale toogle-icon*/
+body {
+  background: #222;
+  padding: 100px;
+  font-size: 8px !important; /*increase me to scale toogle-icon*/
+  overflow-y: hidden; // hide vertical
+overflow-x: hidden; // hide horizontal
 }
 
 .banner {
-  background-color: #080808;;
+  background-color: #080808;
   padding-top: 14px;
   padding-bottom: 7px;
-  
+
   a {
     text-decoration: none;
     color: white;
@@ -20,7 +21,7 @@ body{
   padding-top: 9px;
   padding-left: 31px;
   color: #fff;
-  opacity: .7;
+  opacity: 0.7;
   margin: 0;
   font-size: 10px;
   a {
@@ -47,9 +48,10 @@ body{
     }
 
     .saber-grill {
+      z-index: 12;
       order: 2;
       padding: 30px 0;
-      font-size: 9px; 
+      font-size: 9px;
       /*toggle-icon*/
       .toggle-icon {
         display: block;
@@ -94,20 +96,20 @@ body{
 
       /*pushed*/
       .pushed .toggle-icon {
-        margin: -3.2em 0 0 0.7em;
+        margin: -3.2em 0 0 0;
       }
 
       .pushed .bar:nth-of-type(1) {
         opacity: 0;
       }
 
-      .pushed .bar:nth-of-type(2) {
-        margin-left: 1.4em;
-        -webkit-transform: rotate(-137deg) translateY(-1.5em);
-        -moz-transform: rotate(-137deg) translateY(-1.5em);
-        -ms-transform: rotate(-137deg) translateY(-1.5em);
-        -o-transform: rotate(-137deg) translateY(-1.5em);
-        transform: rotate(-137deg) translateY(-1.5em);
+      .pushed .toggle-icon .bar:nth-of-type(2) {
+        margin-left: 0.6em;
+        -webkit-transform: translateY(1.2em) rotate(-500deg);
+        -moz-transform: translateY(1.2em) rotate(-500deg);
+        -ms-transform: translateY(1.2em) rotate(-500deg);
+        -o-transform: translateY(1.2em) rotate(-500deg);
+        transform: translateY(1.2em) rotate(-500deg);
       }
 
       .pushed .bar:nth-of-type(3) {
@@ -141,13 +143,78 @@ img {
 }
 
 .menu-sheet {
+  opacity: 0;
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 99998;
+  z-index: 10;
   height: 100%;
   width: 100%;
   padding-top: 14px;
-  background: #fff
+  background: #fff;
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
+.menu-logo {
+  position: relative;
+  z-index: 21;
+}
+
+.menu-sheet-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.flex-column {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-grow {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.title-container {
+  padding-top: 60px;
+  margin-bottom: 27px;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+
+
+  h1 {
+    font-size:20px;
+    color: black;
+  }
+
+  h1:hover {
+    color: brown;
+  }
+
+}
+
+.menu-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.tel-number-black {
+  padding-top: 140px !important;
+  p a{
+  
+    color: black;
+  }
+}
