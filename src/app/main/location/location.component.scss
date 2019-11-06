@@ -75,6 +75,7 @@ a {
     display: inline-block;
     position: relative;
     padding: 8px 23px 0;
+    box-shadow: 0 7px 11px -3px black; 
 
     .menu {
       color: #fff;
@@ -82,7 +83,12 @@ a {
       letter-spacing: -0.3px;
       z-index: 1;
       position: relative;
+      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
+  }
+  .link-wrapper:hover {
+    box-shadow: -7px 7px 11px -3px black, 0 7px 9px -1px black, 8px 7px 9px -1px black
   }
   .link-wrapper:after {
     background: inherit;
@@ -100,8 +106,10 @@ a {
     -webkit-transform-origin: 100%;
     -o-transform-origin: 100%;
     transform-origin: 100%;
+    box-shadow: 0 7px 11px -3px black;
   }
 }
+
 
 .we-are-here {
   padding: 50px 0;
