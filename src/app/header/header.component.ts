@@ -7,20 +7,32 @@ import * as $ from 'jquery';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-isMenuClicked = false;
+  isMenuClicked = false;
   constructor() { }
 
   ngOnInit() {
   }
 
   onMenuClick() {
-      $('#nav-container').toggleClass('pushed');
-      this.isMenuClicked = !this.isMenuClicked;
-      // if (this.isMenuClicked) {
-      //   document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-      // } else {
-      //   document.getElementsByTagName('body')[0].style.overflow = '';
-      // }
+    this.toggleMenu();
+    this.toggleClass();
+    this.disableScrolling();
+  }
+
+  disableScrolling() {
+    if (this.isMenuClicked) {
+      document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    } else {
+      document.getElementsByTagName('body')[0].style.overflow = '';
+    }
+  }
+
+  toggleMenu() {
+    this.isMenuClicked = !this.isMenuClicked;
+  }
+
+  toggleClass() {
+    $('#nav-container').toggleClass('pushed');
   }
 
 }

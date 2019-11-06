@@ -83,6 +83,15 @@ h4 {
     font-weight: 500;
     letter-spacing: 2.3px;
     color: #fff;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    a:hover {
+      border-bottom: 1px solid #fff;
+    }
 }
 
 @media (min-width: 576px) {

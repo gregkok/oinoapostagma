@@ -1,40 +1,40 @@
 <header class="banner">
-    <div>
-        <div class="menu-sheet" [ngClass]="{'menu-sheet-open': isMenuClicked}">
-            <div class="containerz flex-column flex-grow">
-                <div class="flex-grow">
-                    <div class="title-container">
-                        <a routerLink="/home">
-                            <h1>home</h1>
-                        </a>
-                        <a routerLink="/menu">
-                            <h1>menu</h1>
-                        </a>
-                        <a routerLink="/gallery">
-                            <h1>gallery</h1>
-                        </a>
-                        <a routerLink="/about">
-                            <h1>about us</h1>
-                        </a>
-                        <a routerLink="/contacts">
-                            <h1>contacts</h1>
-                        </a>
-                    </div>
+
+    <div class="menu-sheet" [ngClass]="{'menu-sheet-open': isMenuClicked}">
+        <div class="containerz display-flex flex-column height-all">
+            <div class="flex-grow padding-top">
+                <div class="title-container">
+                    <a routerLink="/home" (click)="onMenuClick()">
+                        <h1>home</h1>
+                    </a>
+                    <a routerLink="/menu" (click)="onMenuClick()">
+                        <h1>menu</h1>
+                    </a>
+                    <a routerLink="/gallery" (click)="onMenuClick()">
+                        <h1>gallery</h1>
+                    </a>
+                    <a routerLink="/about" (click)="onMenuClick()">
+                        <h1>about us</h1>
+                    </a>
+                    <a routerLink="/contacts" (click)="onMenuClick()">
+                        <h1>contacts</h1>
+                    </a>
                 </div>
-                <div class="title-container tel-number-black">
-                    <p>Call us</p>
-                    <p><a style="color:black" href="tel:+30-211-404-2680">+30 2114042680</a></p>
-                </div>
+            </div>
+            <div class="title-container tel-number-black">
+                <p>Call us</p>
+                <p><a style="color:black" href="tel:+30-211-404-2680" (click)="onMenuClick()">+30 2114042680</a></p>
             </div>
         </div>
     </div>
+
     <div class="containerz">
         <div class="rowz">
             <div class="logo">
                 <div [ngClass]="{'menu-logo': isMenuClicked}">
                     <a *ngIf="!isMenuClicked" routerLink="/"><img src="assets/images/OinoApostagma-Logo-06-vector-1.png"
                             alt="logo"></a>
-                    <a *ngIf="isMenuClicked" routerLink="/"><img
+                    <a *ngIf="isMenuClicked" routerLink="/" (click)="onMenuClick()"><img
                             src="assets/images/OinoApostagma-Logo-06-vector-1-inverted.png" alt="logo"></a>
                 </div>
                 <p class="tel-number"><a href="tel:+30-211-404-2680">+30 2114042680</a></p>
