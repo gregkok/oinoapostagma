@@ -158,19 +158,15 @@ img {
   transition: opacity 0.5s ease;
 }
 
-.height-all {
-  height: 100%;
+.menu-sheet-open {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 10;
 }
 
 .menu-logo {
   position: relative;
   z-index: 21;
-}
-
-.menu-sheet-open {
-  opacity: 1;
-  pointer-events: all;
-  z-index: 10;
 }
 
 .display-flex {
@@ -222,3 +218,36 @@ img {
     color: black;
   }
 }
+
+// .pb-delay {
+//   transition-duration: 0s;
+// }
+// .pb-delay-enter {
+//   @extend .pb-delay;
+//   transition-delay: 70ms;
+// }
+// .pb-delay-leave {
+//   @extend .pb-delay;
+//   transition-delay: 15ms;
+// }
+
+// $cubic-bezier: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+// $translate-off: 20px;
+// $translate-on: 0;
+// $scale-off: .5;
+// $scale-on: 1;
+
+// $opacity-transition-fast: opacity 80ms linear;
+// $opacity-transition: opacity 120ms linear;
+// $opacity-transition-slow: opacity 200ms linear;
+
+// $transform-transition-fast: transform 100ms $cubic-bezier;
+// $transform-transition: transform 200ms $cubic-bezier;
+// $transform-transition-slow: transform 500ms $cubic-bezier;
+
+
+
+// .pb-animate-if-fadeScale {
+//   @include pb-animate-transform(fadeScale);
+//   transform: scale($scale-on);
+// }

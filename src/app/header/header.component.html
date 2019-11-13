@@ -1,30 +1,30 @@
 <header class="banner">
-
-    <div class="menu-sheet" [ngClass]="{'menu-sheet-open': isMenuClicked}">
-        <div class="containerz display-flex flex-column height-all">
-            <div class="flex-grow padding-top">
-                <div class="title-container">
-                    <a routerLink="/home" (click)="onMenuClick()">
-                        <h1>home</h1>
-                    </a>
-                    <a routerLink="/menu" (click)="onMenuClick()">
-                        <h1>menu</h1>
-                    </a>
-                    <a routerLink="/gallery" (click)="onMenuClick()">
-                        <h1>gallery</h1>
-                    </a>
-                    <a routerLink="/about" (click)="onMenuClick()">
-                        <h1>about us</h1>
-                    </a>
-                    <a routerLink="/contacts" (click)="onMenuClick()">
-                        <h1>contacts</h1>
-                    </a>
-                </div>
+    <div class="menu-sheet flex-column containerz display-flex .flex-grow"
+        (click)="onMenuClick()"
+        [ngClass]="{'menu-sheet-open': isMenuClicked}"
+        >
+        <div class="flex-grow padding-top">
+            <div class="title-container">
+                <a routerLink="/home" (click)="onMenuClick()">
+                    <h1>home</h1>
+                </a>
+                <a routerLink="/menu" (click)="onMenuClick()">
+                    <h1>menu</h1>
+                </a>
+                <a routerLink="/gallery" (click)="onMenuClick()">
+                    <h1>gallery</h1>
+                </a>
+                <a routerLink="/about" (click)="onMenuClick()">
+                    <h1>about us</h1>
+                </a>
+                <a routerLink="/contacts" (click)="onMenuClick()">
+                    <h1>contacts</h1>
+                </a>
             </div>
-            <div class="title-container tel-number-black">
-                <p>Call us</p>
-                <p><a style="color:black" href="tel:+30-211-404-2680" (click)="onMenuClick()">+30 2114042680</a></p>
-            </div>
+        </div>
+        <div class="title-container tel-number-black">
+            <p>Call us</p>
+            <p><a style="color:black" href="tel:+30-211-404-2680" (click)="onMenuClick()">+30 2114042680</a></p>
         </div>
     </div>
 
@@ -45,8 +45,8 @@
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
-                    </div><!-- /toggle-icon -->
-                </div><!-- /nav-container -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
