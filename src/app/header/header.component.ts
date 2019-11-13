@@ -34,9 +34,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
   onMenuClick() {
+    console.log("i am clicked");
     this.toggleMenu();
     this.toggleClass();
     this.disableScrolling();

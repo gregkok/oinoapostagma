@@ -1,9 +1,12 @@
 body {
   background: #222;
-  padding: 100px;
   font-size: 8px !important; /*increase me to scale toogle-icon*/
   overflow-y: hidden; // hide vertical
   overflow-x: hidden; // hide horizontal
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 .banner {
@@ -46,7 +49,7 @@ body {
       order: 1;
       flex-grow: 1;
     }
-
+//*********************************saber-grill start******************************
     .saber-grill {
       z-index: 12;
       order: 2;
@@ -132,7 +135,7 @@ body {
     }
   }
 }
-
+//*********************************saber-grill end******************************
 img {
   display: inline-block;
   width: 160px;
@@ -142,26 +145,72 @@ img {
   cursor: pointer;
 }
 
+//***************************menu sheet start******************************
+
 .menu-sheet {
-  opacity: 0;
+  // display: none !important;
+ 
+  
+}
+
+@keyframes fadeOut {
+  from {
+    display: inline-block;
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: ease;
   position: fixed;
   left: 0;
   top: 0;
-  z-index: -10;
   height: 100%;
   width: 100%;
   padding-top: 14px;
+  opacity: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   background: #fff;
-  -webkit-transition: opacity 0.5s ease;
-  -o-transition: opacity 0.5s ease;
-  -moz-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease;
 }
 
-.menu-sheet-open {
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  overflow-y: scroll;
+  visibility: visible;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 14px;
   opacity: 1;
-  pointer-events: all;
+  background: #fff;
   z-index: 10;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .menu-logo {
@@ -218,36 +267,4 @@ img {
     color: black;
   }
 }
-
-// .pb-delay {
-//   transition-duration: 0s;
-// }
-// .pb-delay-enter {
-//   @extend .pb-delay;
-//   transition-delay: 70ms;
-// }
-// .pb-delay-leave {
-//   @extend .pb-delay;
-//   transition-delay: 15ms;
-// }
-
-// $cubic-bezier: cubic-bezier(0.190, 1.000, 0.220, 1.000);
-// $translate-off: 20px;
-// $translate-on: 0;
-// $scale-off: .5;
-// $scale-on: 1;
-
-// $opacity-transition-fast: opacity 80ms linear;
-// $opacity-transition: opacity 120ms linear;
-// $opacity-transition-slow: opacity 200ms linear;
-
-// $transform-transition-fast: transform 100ms $cubic-bezier;
-// $transform-transition: transform 200ms $cubic-bezier;
-// $transform-transition-slow: transform 500ms $cubic-bezier;
-
-
-
-// .pb-animate-if-fadeScale {
-//   @include pb-animate-transform(fadeScale);
-//   transform: scale($scale-on);
-// }
+//***************************menu sheet end******************************

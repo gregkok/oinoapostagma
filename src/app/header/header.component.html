@@ -1,8 +1,6 @@
 <header class="banner">
-    <div class="menu-sheet flex-column containerz display-flex .flex-grow"
-        (click)="onMenuClick()"
-        [ngClass]="{'menu-sheet-open': isMenuClicked}"
-        >
+    <div class="flex-column display-flex .flex-grow"
+        [ngClass]="{'fadeIn': isMenuClicked, 'fadeOut': !isMenuClicked}">
         <div class="flex-grow padding-top">
             <div class="title-container">
                 <a routerLink="/home" (click)="onMenuClick()">
