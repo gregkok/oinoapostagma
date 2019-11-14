@@ -147,13 +147,8 @@ img {
 
 //***************************menu sheet start******************************
 
-.menu-sheet {
-  
-}
-
 @keyframes fadeOut {
   from {
-    display: inline-block;
     opacity: 1;
   }
 
@@ -163,7 +158,7 @@ img {
 }
 
 .fadeOut {
-  display: none !important;
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -171,14 +166,12 @@ img {
   width: 100%;
   padding-top: 14px;
   opacity: 0;
-  // padding-right: 15px;
-  // padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   background: #fff;
   animation-name: fadeOut;
   animation-duration: 0.5s;
-  animation-fill-mode: ease;
+  animation-fill-mode: both;
 }
 
 @keyframes fadeIn {
@@ -192,7 +185,6 @@ img {
 }
 
 .fadeIn {
-  display: inline-block !important;
   overflow-y: scroll;
   position: fixed;
   left: 0;
@@ -203,18 +195,17 @@ img {
   opacity: 1;
   background: #fff;
   z-index: 10;
-  // padding-right: 15px;
-  // padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   animation-name: fadeIn;
   animation-duration: 0.5s;
-  animation-fill-mode: ease;
+  animation-fill-mode: both;
 }
 
 .menu-logo {
   position: relative;
   z-index: 21;
+  display: unset;
 }
 
 .display-flex {

@@ -32,14 +32,22 @@ import {
 export class HeaderComponent implements OnInit {
   isMenuClicked = false;
   constructor() { }
-
+  onInit = false;
   ngOnInit() {
   }
 
   onMenuClick() {
+    if (!this.isMenuClicked) {
+      this.onInit = true;
+    }
     this.toggleMenu();
     this.toggleClass();
     this.disableScrolling();
+    setTimeout(() => {
+      if (this.isMenuClicked || !this.isMenuClicked) {
+        this.onInit = this.isMenuClicked;
+      }
+    }, 500);
   }
 
   toggleMenu() {
