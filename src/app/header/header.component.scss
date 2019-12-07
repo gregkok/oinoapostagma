@@ -158,7 +158,6 @@ img {
 }
 
 .fadeOut {
-  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -172,6 +171,7 @@ img {
   animation-name: fadeOut;
   animation-duration: 0.5s;
   animation-fill-mode: both;
+  overflow-y: scroll;
 }
 
 @keyframes fadeIn {
@@ -185,18 +185,8 @@ img {
 }
 
 .fadeIn {
-  overflow-y: scroll;
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  padding-top: 14px;
   opacity: 1;
-  background: #fff;
   z-index: 10;
-  margin-right: auto;
-  margin-left: auto;
   animation-name: fadeIn;
   animation-duration: 0.5s;
   animation-fill-mode: both;

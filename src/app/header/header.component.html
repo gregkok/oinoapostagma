@@ -1,7 +1,7 @@
 <header class="banner">
     <div *ngIf="onInit" 
-    class="flex-column display-flex .flex-grow" 
-    [ngClass]="{'fadeIn': isMenuClicked, 'fadeOut': !isMenuClicked}">
+    class="flex-column display-flex .flex-grow fadeOut" 
+    [ngClass]="{'fadeIn': isMenuClicked}">
         <div class="flex-grow padding-top">
             <div class="title-container">
                 <a routerLink="/home" (click)="onMenuClick()">

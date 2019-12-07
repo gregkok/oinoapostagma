@@ -26,3 +26,11 @@
     letter-spacing: -.2px;
     color: #000;
   }
+
+  @media (min-width: 268px) {
+    .containerz {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
