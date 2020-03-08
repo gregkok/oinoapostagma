@@ -1,4 +1,18 @@
+.pageWrapper {
+  margin-top: -135px;
+  background: url(../../assets/images/woodPattern.jpg) no-repeat center center fixed, linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7)
+  ); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
 .intro {
+  padding-top: 135px;
   text-align: center;
   margin-top: 30px;
 }

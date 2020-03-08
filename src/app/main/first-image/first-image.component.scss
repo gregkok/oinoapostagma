@@ -12,6 +12,7 @@ div {
   align-items: center;
   margin-top: -106px;
   box-shadow: inset 0px 80px 150px black;
+  max-height: 1000px;
   // background-image: url(../../../assets/images/xtapodiMobile.png);
   // background-repeat: no-repeat;
   // background-size: cover;
@@ -79,7 +80,7 @@ img {
  
   @media (min-width: 500px) {
     .image {
-      height: 300px;
+      height: 400px;
     }
     .tag-word p {
       @keyframes mymove {
