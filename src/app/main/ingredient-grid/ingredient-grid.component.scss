@@ -1,8 +1,7 @@
-.front-sections .row > div {
+.front-sections .rowz > div {
   border-color: #fff;
-    border-style: solid;
-    border-width: 6px 0;
-  
+  border-style: solid;
+  border-width: 6px 0;
 }
 
 .container-small {
@@ -11,10 +10,14 @@
 
 .containerz {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.rowz {
+  display: flex;
+  flex-wrap: wrap;
+  display: -webkit-box;
 }
 
 .bg-green {
@@ -32,7 +35,7 @@
   align-items: center;
 }
 
-.front-sections .row img {
+.front-sections .rowz img {
   -o-object-fit: cover;
   object-fit: cover;
   height: 100%;
@@ -58,13 +61,13 @@ img {
 }
 
 @media (min-width: 768px) {
-  .front-sections .row {
+  .front-sections .rowz {
     margin-bottom: 0;
   }
 }
 
 @media (min-width: 768px) {
-  .front-sections .row > div {
+  .front-sections .rowz > div {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     border-width: 6px;
@@ -79,17 +82,23 @@ img {
 @media (min-width: 768px) {
   .containerz {
     max-width: 720px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
 @media (min-width: 992px) {
   .containerz {
     max-width: 960px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 
 @media (min-width: 1200px) {
   .containerz {
     max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
