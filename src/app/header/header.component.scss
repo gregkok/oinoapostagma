@@ -10,9 +10,10 @@ body {
 }
 
 .banner {
-  background-color: #080808;
+  background-color: transparent;
   padding-top: 14px;
   padding-bottom: 7px;
+  position: relative;
 
   a {
     text-decoration: none;

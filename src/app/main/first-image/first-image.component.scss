@@ -10,12 +10,26 @@ div {
   display: flex;
   position: inherit;
   align-items: center;
+  margin-top: -106px;
+  box-shadow: inset 0px 80px 150px black;
+  // background-image: url(../../../assets/images/xtapodiMobile.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-image: radial-gradient(transparent 80% red);
 }
+
+// .image:after {
+//   content: '';
+//   position: absolute;
+//   top: 0; left: 0; bottom: 0; right: 0;
+//   background: radial-gradient(circle, transparent 50%, black 150%);
+// }
 
 img {
   flex-grow: 1;
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 .parea-tittle {
@@ -32,6 +46,7 @@ img {
   z-index: 2;
   font-family: Gochi Hand, cursive;
   color: white;
+  padding-top: 84px;
 
   #delay {
     animation-timing-function: ease;
@@ -47,6 +62,7 @@ img {
     }
     @media (min-width: 868px) {
       font-size: 4.6rem;
+      padding-top: 0;
     }
     
     @keyframes mymove {
@@ -62,6 +78,9 @@ img {
   }
  
   @media (min-width: 500px) {
+    .image {
+      height: 300px;
+    }
     .tag-word p {
       @keyframes mymove {
         from {
@@ -74,9 +93,13 @@ img {
         }
       }
     }
+    
   }
 
   @media (min-width: 868px) {
+    .image {
+      height: 500px !important;
+    }
     .tag-word p {
       @keyframes mymove {
         from {
@@ -91,3 +114,33 @@ img {
     }
   }
 }
+
+// @media (min-width: 350px) {
+//   .image {
+//     height: 300px;
+//   }
+// }
+
+// @media (min-width: 500px) {
+//   .image {
+//     height: 400px;
+//   }
+// }
+
+// @media (min-width: 868px) {
+//   .image {
+//     height: 500px;
+//   }
+// }
+
+// @media (min-width: 1068px) {
+//   .image {
+//     height: 700px;
+//   }
+// }
+
+// @media (min-width: 1468px) {
+//   .image {
+//     height: 1000px;
+//   }
+// }
