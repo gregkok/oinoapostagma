@@ -1,62 +1,58 @@
-<div class="pageWrapper">
-    <div class="containerz container-small intro">
-        <div class="page-header">
-            <h1 class="tittle">Welcome to Oinoapostagma</h1>
-        </div>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae atque accusamus. Excepturi
-            quisquam
-            quis ut, quia sint aliquam dolor ducimus aut laboriosam officia reprehenderit vero totam cumque similique
-            at.
-        </p>
+<div class="containerz container-small intro">
+    <div class="page-header">
+        <h1 class="tittle">Welcome to Oinoapostagma</h1>
     </div>
-    <div>
-        <div class="bg-green menu-wrapper">
-            <div class="sectionz">
-                <div *ngFor="let section of menu">
-                    <div *ngIf="section.sectionName === 'Σαλατες'" class="sectionzone section ">
-                        <h4 class="h4">{{ section.sectionName }}</h4>
-                        <div *ngFor="let item of section.sectionContent">
-                            <div class="salads">
-                                <h6 class="h6">{{item.name}}</h6>
-                                <p>{{item.description}}</p>
-                                <div class="price">{{item.price}}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div *ngFor="let section of menu">
-                    <div *ngIf="section.sectionName === 'Μεζεδακια'" class="sectionzone section other mezedakia">
-                        <h4 class="h4">{{ section.sectionName }}</h4>
-                        <div *ngFor="let item of section.sectionContent">
-                            <div class="item-row">
-                                <h6 class="h6">{{item.name}}</h6>
-                                <span class="dots"></span>
-                                <div class="price">{{item.price}}</div>
-                            </div>
-                            <p>{{item.description}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sectionz">
-                <div *ngFor="let section of menu">
-                    <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
-                        class="sectionzone section other tigani">
-                        <h4 class="h4">{{section.sectionName}}</h4>
-                        <div *ngFor="let item of section.sectionContent">
-                            <div class="item-row">
-                                <h6 class="h6">{{item.name}}</h6>
-                                <span class="dots"></span>
-                                <div class="price">{{item.price}}</div>
-                            </div>
-                            <p>{{item.description}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <app-map></app-map>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus molestiae atque accusamus. Excepturi quisquam
+        quis ut, quia sint aliquam dolor ducimus aut laboriosam officia reprehenderit vero totam cumque similique at.
+    </p>
 </div>
+<div>
+    <div class="bg-green menu-wrapper">
+        <div class="sectionz">
+            <div *ngFor="let section of menu">
+                <div *ngIf="section.sectionName === 'Σαλατες'" class="sectionzone section ">
+                    <h4 class="h4">{{ section.sectionName }}</h4>
+                    <div *ngFor="let item of section.sectionContent">
+                        <div class="salads">
+                            <h6 class="h6">{{item.name}}</h6>
+                            <p>{{item.description}}</p>
+                            <div class="price">{{item.price}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngFor="let section of menu">
+                <div *ngIf="section.sectionName === 'Μεζεδακια'" class="sectionzone section other mezedakia">
+                    <h4 class="h4">{{ section.sectionName }}</h4>
+                    <div *ngFor="let item of section.sectionContent">
+                        <div class="item-row">
+                            <h6 class="h6">{{item.name}}</h6>
+                            <span class="dots"></span>
+                            <div class="price">{{item.price}}</div>
+                        </div>
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionz">
+            <div *ngFor="let section of menu">
+                <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
+                    class="sectionzone section other tigani">
+                    <h4 class="h4">{{section.sectionName}}</h4>
+                    <div *ngFor="let item of section.sectionContent">
+                        <div class="item-row">
+                            <h6 class="h6">{{item.name}}</h6>
+                            <span class="dots"></span>
+                            <div class="price">{{item.price}}</div>
+                        </div>
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-map></app-map>
