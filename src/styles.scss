@@ -14,3 +14,15 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
+
+@font-face {
+    font-family: 'vag-handwritten';
+    src: url('vag-handwritten-webfont.eot');
+    src: url('vag-handwritten-webfont.eot?#iefix') format('embedded-opentype'),
+         url('vag-handwritten-webfont.woff2') format('woff2'),
+         url('vag-handwritten-webfont.woff') format('woff'),
+         url('vag-handwritten-webfont.ttf') format('truetype'),
+         url('vag-handwritten-webfont.svg#vag-handwritten') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
