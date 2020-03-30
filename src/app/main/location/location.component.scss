@@ -25,7 +25,7 @@
 
 .title-container {
   margin-bottom: 27px;
-  font-family: "Gochi Hand", cursive;
+  font-family: "vag-handwritten", normal;
   text-align: center;
 }
 
@@ -34,19 +34,16 @@
 }
 
 .title-container .title h1 {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 33px;
+  font-weight: 600;
   letter-spacing: 1.4px;
-  text-transform: uppercase;
   margin: 0;
 }
 
 .title-container h2 {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 33px;
+  font-weight: 600;
   letter-spacing: 1.4px;
-
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -71,14 +68,14 @@ a {
   text-decoration: none;
   background-color: transparent;
   cursor: pointer;
-  font-family: Gochi Hand, cursive;
+  font-family: "vag-handwritten", normal;
   margin-bottom: 43px;
 
   .link-wrapper {
     background: #000;
     display: inline-block;
     position: relative;
-    padding: 8px 23px 0;
+    padding: 0 23px 0;
     box-shadow: 0 7px 11px -3px black;
 
     .menu {
@@ -87,7 +84,7 @@ a {
       letter-spacing: -0.3px;
       z-index: 1;
       position: relative;
-      // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      word-spacing: -7px;
     }
   }
 
@@ -129,14 +126,14 @@ a {
     font-weight: 400;
     letter-spacing: -0.3px;
     color: #000;
-    font-family: Gochi Hand, cursive;
+    font-family: "vag-handwritten", normal;
   }
 
   p {
     font-size: 16px;
     line-height: 1.33;
     letter-spacing: 0.8px;
-    color: rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 8);
   }
 }
 
@@ -150,6 +147,7 @@ a {
     margin-bottom: 1rem;
 
     a {
+      font-size: 20px;
       color: #000;
       border-bottom: 1px solid #000;
     }

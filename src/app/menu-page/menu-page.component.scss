@@ -12,13 +12,12 @@
 }
 
 .page-header {
-  margin-bottom: 27px;
-  font-family: Gochi Hand, cursive;
+  margin-bottom: 30px;
+  font-family: "vag-handwritten", normal;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1.4px;
   color: #424242;
-  text-transform: uppercase;
   margin: 0;
 }
 
@@ -50,12 +49,14 @@
 }
 
 .h6 {
-  font-family: Gochi Hand, cursive;
+  word-spacing: -6px;
+  font-family: "vag-handwritten", normal;
   margin-right: 6px;
-  font-size: 16px;
+  font-size: 26px;
   letter-spacing: 0.1px;
   white-space: nowrap;
   margin: 0;
+  font-weight: 600;
 }
 
 .dots:before {
@@ -72,17 +73,17 @@
   overflow: hidden;
   font-size: 18px;
   position: relative;
-  top: -4px;
+  top: 5px;
 }
 
 .price {
-  margin-left: 6px;
+  margin: 6px 0 1px 6px;
   font-size: 15px;
   font-weight: 700;
   white-space: wrap;
   letter-spacing: 0.3px;
   color: #424242;
-  margin-bottom: 1px;
+  
 }
 
 .salads {
