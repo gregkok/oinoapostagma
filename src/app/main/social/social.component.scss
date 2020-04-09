@@ -75,26 +75,6 @@ a {
     cursor: pointer;
 }
 
-.divider:before, .divider:after {
-    content: "";
-    position: relative;
-    border-top: 2px solid #e2e2e2;
-    width: 30px;
-    top: -.2rem;
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.divider {
-    font-size: 12px;
-    font-style: italic;
-    letter-spacing: 1.3px;
-    text-align: center;
-    color: #000;
-    position: relative;
-    margin: 15px 0 25px;
-}
-
 .fb-logo a img {
     height: 52px;
     width: 52px;
