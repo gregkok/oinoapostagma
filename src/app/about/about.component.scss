@@ -2,7 +2,11 @@
     margin-bottom: 27px;
 }
 
-.about-text-wrapper {
+.text-wrapper {
+    margin: 0 16px;
+}
+
+.about-text-container {
     text-align: center;
     margin: auto;
     max-width: 500px;
@@ -20,8 +24,12 @@
     max-width: 800px;
     text-align: center;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
+    img {
+        width: 100%;
+        max-width: 800px;
+        max-height: 500px;
+    }
 }
