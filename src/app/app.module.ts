@@ -16,6 +16,8 @@ import { SocialComponent } from './main/social/social.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { AboutComponent } from './about/about.component';
+import { LoadingLandingComponent } from './loading-landing/loading-landing.component';
+import { WindowRefService } from './service/window-ref.service';
 
 const appRoutes: Routes = [
   { path: 'menu', component: MenuPageComponent },
@@ -45,8 +47,9 @@ const appRoutes: Routes = [
     FooterComponent,
     MenuPageComponent,
     AboutComponent,
+    LoadingLandingComponent,
   ],
-  providers: [],
+  providers: [WindowRefService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

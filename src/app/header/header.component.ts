@@ -31,8 +31,10 @@ import {
 })
 export class HeaderComponent implements OnInit {
   isMenuClicked = false;
-  constructor() { }
   onInit = false;
+
+  constructor() { }
+
   ngOnInit() {
   }
 
