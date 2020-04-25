@@ -13,7 +13,6 @@ export class MapComponent implements OnInit {
   // zoom = 14;
 
   ngOnInit() {
-  
   }
 
 }
