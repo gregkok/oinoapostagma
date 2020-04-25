@@ -1,6 +1,9 @@
-<div class="map">
+<!-- <div class="map">
     <a href="https://www.google.se/maps/place/Oinoap%C3%B3stagma/@38.1168018,23.8620339,16z/data=!4m5!3m4!1s0x14a19dfc5b136fd5:0x8b3223a79c5cfb9d!8m2!3d38.1178116!4d23.8624619" 
     target="blank">
         <img src="assets/images/oinoMapBnW.png" alt="">
     </a>
-</div>
+</div> -->
+<agm-map [latitude]='lat' [longitude]='lng' [zoom]='zoom'>
+    <agm-marker [latitude]='lat' [longitude]='lng'></agm-marker>
+</agm-map>

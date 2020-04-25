@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.1.0",
     "@angular/animations": "~8.1.0",
     "@angular/common": "~8.1.0",
     "@angular/compiler": "~8.1.0",
@@ -20,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
     "@babel/compat-data": "^7.8.0",
+    "@types/googlemaps": "^3.39.3",
     "bootstrap": "^4.3.1",
     "instafeed.js": "^1.4.1",
     "jquery": "^3.4.1",
