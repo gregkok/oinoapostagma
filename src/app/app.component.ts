@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { WindowRefService } from './service/window-ref.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { WindowRefService } from './service/window-ref.service';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private windowRef: WindowRefService) {}
+  constructor(private windowRef: WindowRefService, private chRef: ChangeDetectorRef) {}
 
 window = this.windowRef.nativeWindow;
 ready = false;
@@ -17,10 +17,12 @@ ngOnInit() {
   // this.window.document.addEventListener('DOMContentLoaded', () => {
   //   this.ready = true;
   // });
-
-  this.window.onload = () => {
-    this.ready = true;
-  };
+  // console.log(this.window);
+  // this.window.load =() => {
+  //   this.ready = true;
+  //   console.log('ready');
+  //   this.chRef.detectChanges();
+  // };
 }
 
 

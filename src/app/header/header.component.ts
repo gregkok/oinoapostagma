@@ -31,7 +31,7 @@ import {
 })
 export class HeaderComponent implements OnInit {
   isMenuClicked = false;
-  onInit = false;
+  isGrillClicked = false;
 
   constructor() { }
 
@@ -40,14 +40,14 @@ export class HeaderComponent implements OnInit {
 
   onMenuClick() {
     if (!this.isMenuClicked) {
-      this.onInit = true;
+      this.isGrillClicked = true;
     }
     this.toggleMenu();
     this.toggleClass();
     this.disableScrolling();
     setTimeout(() => {
       if (this.isMenuClicked || !this.isMenuClicked) {
-        this.onInit = this.isMenuClicked;
+        this.isGrillClicked = this.isMenuClicked;
       }
     }, 500);
   }

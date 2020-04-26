@@ -171,7 +171,7 @@ img {
   animation-name: fadeOut;
   animation-duration: 0.5s;
   animation-fill-mode: both;
-  overflow-y: scroll;
+  //overflow-y: scroll;
 }
 
 @keyframes fadeIn {
@@ -195,7 +195,6 @@ img {
 .menu-logo {
   position: relative;
   z-index: 21;
-  display: unset;
 }
 
 .display-flex {

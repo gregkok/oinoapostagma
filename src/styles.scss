@@ -16,4 +16,21 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(173, 173, 173);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+}
 
