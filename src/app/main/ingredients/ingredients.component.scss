@@ -1,0 +1,37 @@
+.containerz {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .container-small {
+    max-width: 438px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .marg-5 {
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+  }
+
+  h2 {
+    font-family: "vag-handwritten", normal, 'EB Garamond', serif;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    color: #424242;
+  }
+
+  @media (min-width: 268px) {
+    .containerz {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }

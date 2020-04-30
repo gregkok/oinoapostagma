@@ -1,0 +1,59 @@
+<div class="containerz container-small intro">
+    <div class="page-header">
+        <h1 class="tittle">Καλός ήλατε στο Οινοαπόσταγμα</h1>
+    </div>
+    <p>
+        Για να στήσουμε ένα πιάτο επιλέγουμε τα πιο μαλακά και ζουμερά ελληνικά κρέατα, και τα συνοδεύουμε είτε με
+        πατάτες κομμένες στο χέρι και τηγανισμένες με φρέσκο ηλιέλαιο, είτε με σαλάτα με φρέσκο μαρούλι και ντομάτα
+        σερβιρισμένα με ελαιόλαδο.
+    </p>
+</div>
+<div>
+    <div class="bg-green menu-wrapper">
+        <div class="sectionz">
+            <div *ngFor="let section of menu">
+                <div *ngIf="section.sectionName === 'Σαλατες'" class="sectionzone section ">
+                    <h4 class="h4">{{ section.sectionName }}</h4>
+                    <div *ngFor="let item of section.sectionContent">
+                        <div class="salads">
+                            <h6 class="h6">{{item.name}}</h6>
+                            <p>{{item.description}}</p>
+                            <div class="price">{{item.price}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngFor="let section of menu">
+                <div *ngIf="section.sectionName === 'Μεζεδακια'" class="sectionzone section other mezedakia">
+                    <h4 class="h4">{{ section.sectionName }}</h4>
+                    <div *ngFor="let item of section.sectionContent">
+                        <div class="item-row">
+                            <h6 class="h6">{{item.name}}</h6>
+                            <span class="dots"></span>
+                            <div class="price">{{item.price}}</div>
+                        </div>
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sectionz">
+            <div *ngFor="let section of menu">
+                <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
+                    class="sectionzone section other tigani">
+                    <h4 class="h4">{{section.sectionName}}</h4>
+                    <div *ngFor="let item of section.sectionContent">
+                        <div class="item-row">
+                            <h6 class="h6">{{item.name}}</h6>
+                            <span class="dots"></span>
+                            <div class="price">{{item.price}}</div>
+                        </div>
+                        <p>{{item.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-map></app-map>

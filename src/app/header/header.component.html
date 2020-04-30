@@ -1,0 +1,53 @@
+<header class="banner">
+    <div *ngIf="isGrillClicked" 
+    class="flex-column display-flex flex-grow fadeOut" 
+    [ngClass]="{'fadeIn': isMenuClicked}">
+        <div class="flex-grow padding-top">
+            <div class="title-container">
+                <a routerLink="/home" (click)="onMenuClick()">
+                    <h1>Αρχική</h1>
+                </a>
+                <a routerLink="/menu" (click)="onMenuClick()">
+                    <h1>Μενού</h1>
+                </a>
+                <a routerLink="/about" (click)="onMenuClick()">
+                    <h1>Λίγα για μάς</h1>
+                </a>
+                <!-- <a routerLink="/gallery" (click)="onMenuClick()">
+                    <h1>Χίλιες λέξεις</h1>
+                </a>
+                
+                <a routerLink="/contacts" (click)="onMenuClick()">
+                    <h1>Επαφές</h1>
+                </a> -->
+            </div>
+        </div>
+        <div class="title-container tel-number-black">
+            <p>Μην χάνεστε</p>
+            <p><a style="color:black" href="tel:+30-211-404-2680" (click)="onMenuClick()">+30 2114042680</a></p>
+        </div>
+    </div>
+
+    <div class="containerz">
+        <div class="rowz">
+            <div class="logo">
+                <div [ngClass]="{'menu-logo': isMenuClicked}">
+                    <a *ngIf="!isMenuClicked" routerLink="/"><img src="assets/images/OinoApostagma-Logo-06-vector-1.png"
+                            alt="logo"></a>
+                    <a *ngIf="isMenuClicked" routerLink="/" (click)="onMenuClick()"><img
+                            src="assets/images/OinoApostagma-Logo-06-vector-1-inverted.png" alt="logo"></a>
+                </div>
+                <p class="tel-number"><a href="tel:+30-211-404-2680">+30 2114042680</a></p>
+            </div>
+            <div class="saber-grill">
+                <div id="nav-container" (click)="onMenuClick()">
+                    <div class="toggle-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

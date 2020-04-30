@@ -1,0 +1,9 @@
+<!-- <app-loading-landing *ngIf="!ready"></app-loading-landing> -->
+<div [hidden]="ready">
+    <app-header></app-header>
+    <div class="scroll scroll4">
+        <div class="content"></div>
+      </div>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>

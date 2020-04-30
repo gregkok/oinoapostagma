@@ -1,0 +1,112 @@
+.section {
+  padding: 50px 0;
+}
+
+.containerz {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.text-center {
+  text-align: center;
+}
+.title-container {
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.title-container h3 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  margin: 0;
+  font-family: "vag-handwritten", normal, "EB Garamond", serif;
+  color: #424242;
+}
+
+.title {
+  text-align: center;
+}
+
+.followerz {
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.8px;
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Lato, sans-serif;
+}
+
+.insta-header {
+    font-weight: 600;
+    line-height: normal;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    color: #000;
+    text-align: left;
+}
+
+.insta-grid {
+    height: 200px;
+    background-color: #424242;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 65px;
+}
+
+.insta-follow {
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "vag-handwritten", normal, "EB Garamond", serif;
+    color: #629945;
+    border: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.fb-logo a img {
+    height: 52px;
+    width: 52px;
+}
+
+.ta-logo a img {
+    height: 52px;
+    width: 52px;
+} 
+
+@media (min-width: 576px) {
+  .containerz {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerz {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .containerz {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .containerz {
+    max-width: 1140px;
+  }
+}
+
+.container-small {
+    max-width: 438px;
+  }
