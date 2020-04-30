@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { sections } from 'app/app.menu-model';
+import { sections } from '../../app/app.menu-model';
 
 @Component({
   selector: 'app-menu-page',
