@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   ready = false;
 
   ngOnInit() {
-    console.log(this.window);
+    console.log(this.window.navigator);
     this.window.onload = () => {
       this.ready = true;
       console.log('ready');
