@@ -74,7 +74,7 @@ img {
 @media (min-width: 768px) {
   .front-sections .rowz > div {
     -ms-flex-preferred-size: 50%;
-    flex-basis: 0 0 50%;
+    flex-basis: 50%;
     border-width: 6px;
   }
 }
