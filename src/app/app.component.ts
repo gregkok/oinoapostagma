@@ -14,7 +14,8 @@ export class AppComponent implements OnInit {
   ready = false;
 
   ngOnInit() {
-    const isSafari = /^((?!chrome|android).)*safari/i.test(window.navigator.userAgent);
+    const isSafari = /^((?!chrome|android).)*safari/i.test(this.window.navigator.userAgent);
+    // const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(this.window.navigator.platform);
     if (isSafari) {
       this.ready = true;
     } else {
