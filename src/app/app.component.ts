@@ -14,11 +14,17 @@ export class AppComponent implements OnInit {
   ready = false;
 
   ngOnInit() {
-    console.log(this.window.navigator);
-    this.window.onload = () => {
+    const isSafari = /^((?!chrome|android).)*safari/i.test(window.navigator.userAgent);
+    if (isSafari) {
       this.ready = true;
-      console.log('ready');
-      this.chRef.detectChanges();
-    };
+    } else {
+      console.log(this.window.navigator);
+      this.window.onload = () => {
+        this.ready = true;
+        console.log('ready');
+        this.chRef.detectChanges();
+      };
+    }
+
   }
 }
