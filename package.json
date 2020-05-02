@@ -19,7 +19,7 @@
     "@agm/core": "^1.1.0",
     "@angular/cli": "^9.1.4",
     "@angular/compiler-cli": "^9.1.4",
-    "@angular-devkit/build-angular": "^0.803.26",
+    "@angular-devkit/build-angular": "~0.901.4",
     "@angular/animations": "^9.1.4",
     "@angular/common": "^9.1.4",
     "@angular/compiler": "^9.1.4",
@@ -36,9 +36,9 @@
     "jquery": "^3.5.0",
     "path": "^0.12.7",
     "rxjs": "~6.5.5",
-    "tslib": "^1.11.1",
+    "tslib": "^1.10.0",
     "typescript": "~3.8.3",
-    "zone.js": "~0.10.3"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.26",
@@ -48,8 +48,8 @@
     "@types/jasmine": "^3.3.16",
     "@types/jasminewd2": "^2.0.8",
     "@types/jquery": "^3.3.36",
-    "@types/node": "~8.9.4",
-    "codelyzer": "^5.2.2",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
     "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
