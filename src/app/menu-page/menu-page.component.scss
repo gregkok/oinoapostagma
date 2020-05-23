@@ -59,7 +59,21 @@
   font-weight: 500;
 }
 
+.padding {
+  padding-bottom: 4px;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
 .dots:before {
+  content: "....................................................................................................................................................................................................................................";
+  letter-spacing: 0.1px;
+  color: #cecece;
+  white-space: nowrap;
+}
+.dotsCategory:before {
   content: "....................................................................................................................................................................................................................................";
   letter-spacing: 0.1px;
   color: #cecece;
@@ -76,6 +90,16 @@
   top: 5px;
 }
 
+.dotsCategory {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  font-size: 18px;
+  position: relative;
+  top: -10px
+}
+
 .price {
   margin: 6px 0 1px 6px;
   font-size: 15px;
@@ -83,7 +107,10 @@
   white-space: wrap;
   letter-spacing: 0.3px;
   color: #424242;
-  
+}
+
+.priceCategory {
+  margin-top: -7px;
 }
 
 .salads {

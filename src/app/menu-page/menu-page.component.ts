@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { sections } from '../../app/app.menu-model';
+import { kouzina, kava } from '../../app/app.menu-model';
 
 @Component({
   selector: 'app-menu-page',
@@ -8,9 +8,21 @@ import { sections } from '../../app/app.menu-model';
 })
 
 export class MenuPageComponent implements OnInit {
-  public menu = sections;
+  protected menuKouzina = kouzina;
+  protected menuKava = kava;
+
   constructor() { }
 
   ngOnInit() {
+    console.log('menuKouzina', this.menuKouzina);
+    console.log('menuKava', this.menuKava);
   }
+
+//   WIFI :
+// Oinoapostagma
+
+// Ο καταναλωτής δεν εχει υποχρέωση
+// να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό στοιχείο
+// ( απόδειξη ή τιμολόγιο )
+
 }

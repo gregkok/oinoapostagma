@@ -20,10 +20,8 @@ export class AppComponent implements OnInit {
     if (isSafari || iOS || isIEOrEdge) {
       this.ready = true;
     } else {
-      console.log(this.window.navigator);
       this.window.onload = () => {
         this.ready = true;
-        console.log('ready');
         this.chRef.detectChanges();
       };
     }
