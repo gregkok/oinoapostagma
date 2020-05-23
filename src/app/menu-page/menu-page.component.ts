@@ -8,8 +8,8 @@ import { kouzina, kava } from '../../app/app.menu-model';
 })
 
 export class MenuPageComponent implements OnInit {
-  protected menuKouzina = kouzina;
-  protected menuKava = kava;
+  public menuKouzina = kouzina;
+  public menuKava = kava;
 
   constructor() { }
 
