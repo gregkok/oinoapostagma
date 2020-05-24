@@ -64,7 +64,7 @@
 
 .minus {
   &:before {
-    content: " \02D7";
+    content: "-";
     font-size: 24px;
     padding-right: 8px;
     font-family: "EB Garamond", serif;
@@ -73,10 +73,13 @@
 
 .plus {
   &:before {
-    content: " \002B";
+    content: "+";
     font-size: 24px;
     padding-right: 8px;
     font-family: "EB Garamond", serif;
+    -webkit-animation: transform 0.3s ease-in-out;;
+    -moz-animation: transform 0.3s ease-in-out;;
+    animation: transform 0.3s ease-in-out;;
   }
 }
 
