@@ -10,6 +10,8 @@ import { kouzina, kava } from '../../app/app.menu-model';
 export class MenuPageComponent implements OnInit {
   public menuKouzina = kouzina;
   public menuKava = kava;
+  public isKouzinaExpanded = false;
+  public isKavaExpanded = false;
 
   constructor() { }
 
@@ -18,11 +20,22 @@ export class MenuPageComponent implements OnInit {
     console.log('menuKava', this.menuKava);
   }
 
-//   WIFI :
-// Oinoapostagma
+  onSectionClick(type: string) {
+    switch (type) {
+      case 'kouzina':
+        this.isKouzinaExpanded = !this.isKouzinaExpanded;
+        break;
+      case 'kava':
+        this.isKavaExpanded = !this.isKavaExpanded;
+        break;
+    }
+  }
 
-// Ο καταναλωτής δεν εχει υποχρέωση
-// να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό στοιχείο
-// ( απόδειξη ή τιμολόγιο )
+  //   WIFI :
+  // Oinoapostagma
+
+  // Ο καταναλωτής δεν εχει υποχρέωση
+  // να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό στοιχείο
+  // ( απόδειξη ή τιμολόγιο )
 
 }

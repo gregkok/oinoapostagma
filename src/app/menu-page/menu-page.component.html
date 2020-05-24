@@ -1,6 +1,6 @@
 <div class="containerz container-small intro">
     <div class="page-header">
-        <h1 class="tittle">Καλός ήλατε στο Οινοαπόσταγμα</h1>
+        <h1 class="tittle">Καλώς ήρθατε στο Οινοαπόσταγμα</h1>
     </div>
     <p>
         Για να στήσουμε ένα πιάτο επιλέγουμε τα πιο μαλακά και ζουμερά ελληνικά κρέατα, και τα συνοδεύουμε είτε με
@@ -9,64 +9,69 @@
     </p>
 </div>
 <div>
-    <div class="bg-green menu-wrapper">
-        <div class="sectionz">
-            <div *ngFor="let section of menuKouzina">
-                <div *ngIf="section.sectionName === 'Σαλατες'" class="sectionzone section ">
-                    <h4 class="h4">{{ section.sectionName }}</h4>
-                    <div *ngFor="let item of section.sectionContent">
-                        <div class="salads">
-                            <h6 class="h6">{{item.name}}</h6>
-                            <p>{{item.description}}</p>
-                            <div class="price">{{item.price}}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div *ngFor="let section of menuKouzina">
-                <div *ngIf="section.sectionName === 'Μεζεδακια'" class="sectionzone section other mezedakia">
-                    <h4 class="h4">{{ section.sectionName }}</h4>
-                    <div *ngFor="let item of section.sectionContent">
-                        <div *ngIf="!item.type">
-                            <div class="item-row">
+    <div class="kouzinaSection">
+        <div class="sectionTitle"
+            [ngClass]="{'minus': isKouzinaExpanded, 'plus': !isKouzinaExpanded}"
+            (click)="onSectionClick('kouzina')">Η κουζίνα</div>
+        <div class="bg-green menu-wrapper" [ngClass]="{'sectionRetracted': !isKouzinaExpanded}">
+            <div class="sectionz">
+                <div *ngFor="let section of menuKouzina">
+                    <div *ngIf="section.sectionName === 'Σαλατες'" class="sectionzone section ">
+                        <h4 class="h4">{{ section.sectionName }}</h4>
+                        <div *ngFor="let item of section.sectionContent">
+                            <div class="salads">
                                 <h6 class="h6">{{item.name}}</h6>
-                                <span class="dots"></span>
+                                <p>{{item.description}}</p>
                                 <div class="price">{{item.price}}</div>
-                            </div>
-                            <p>{{item.description}}</p>
-                        </div>
-                        <div *ngIf="item.type">
-                            <h6 class="h6 padding" *ngIf="item.type === 'title'">{{item.name}}</h6>
-                            <div *ngIf="item.type === 'category'" class="item-row">
-                                <p class="noWrap">{{item.category}}</p>
-                                <span class="dotsCategory"></span>
-                                <div class="price priceCategory">{{item.price}}</div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="sectionz">
-            <div *ngFor="let section of menuKouzina">
-                <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
-                    class="sectionzone section other tigani">
-                    <h4 class="h4">{{section.sectionName}}</h4>
-                    <div *ngFor="let item of section.sectionContent">
-                        <div *ngIf="!item.type">
-                            <div class="item-row">
-                                <h6 class="h6">{{item.name}}</h6>
-                                <span class="dots"></span>
-                                <div class="price">{{item.price}}</div>
+                <div *ngFor="let section of menuKouzina">
+                    <div *ngIf="section.sectionName === 'Μεζεδακια'" class="sectionzone section other mezedakia">
+                        <h4 class="h4">{{ section.sectionName }}</h4>
+                        <div *ngFor="let item of section.sectionContent">
+                            <div *ngIf="!item.type">
+                                <div class="item-row">
+                                    <h6 class="h6">{{item.name}}</h6>
+                                    <span class="dots"></span>
+                                    <div class="price">{{item.price}}</div>
+                                </div>
+                                <p>{{item.description}}</p>
                             </div>
-                            <p>{{item.description}}</p>
+                            <div *ngIf="item.type">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <div *ngIf="item.type === 'category'" class="item-row">
+                                    <p class="noWrap">{{item.category}}</p>
+                                    <span class="dotsCategory"></span>
+                                    <div class="price priceCategory">{{item.price}}</div>
+                                </div>
+                            </div>
                         </div>
-                        <div *ngIf="item.type">
-                            <h6 class="h6 padding" *ngIf="item.type === 'title'">{{item.name}}</h6>
-                            <div *ngIf="item.type === 'category'" class="item-row">
-                                <p class="noWrap">{{item.category}}</p>
-                                <span class="dotsCategory"></span>
-                                <div class="price priceCategory">{{item.price}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionz">
+                <div *ngFor="let section of menuKouzina">
+                    <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
+                        class="sectionzone section other tigani">
+                        <h4 class="h4">{{section.sectionName}}</h4>
+                        <div *ngFor="let item of section.sectionContent">
+                            <div *ngIf="!item.type">
+                                <div class="item-row">
+                                    <h6 class="h6">{{item.name}}</h6>
+                                    <span class="dots"></span>
+                                    <div class="price">{{item.price}}</div>
+                                </div>
+                                <p>{{item.description}}</p>
+                            </div>
+                            <div *ngIf="item.type">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <div *ngIf="item.type === 'category'" class="item-row">
+                                    <p class="noWrap">{{item.category}}</p>
+                                    <span class="dotsCategory"></span>
+                                    <div class="price priceCategory">{{item.price}}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,52 +79,56 @@
             </div>
         </div>
     </div>
-
-    <div class="bg-green menu-wrapper">
-        <div class="sectionz">
-            <div *ngFor="let section of menuKava | slice:0:3; let i = index;">
-                <div class="sectionzone section other mezedakia">
-                    <h4 class="h4">{{ section.sectionName }}</h4>
-                    <div *ngFor="let item of section.sectionContent">
-                        <div *ngIf="!item.type">
-                            <div class="item-row">
-                                <h6 class="h6">{{item.name}}</h6>
-                                <span class="dots"></span>
-                                <div class="price">{{item.price}}</div>
+    <div class="kavaSection">
+        <div class="sectionTitle kava"
+            [ngClass]="{'minus': isKavaExpanded, 'plus': !isKavaExpanded}"
+            (click)="onSectionClick('kava')">Η κάβα</div>
+        <div class="bg-green menu-wrapper" [ngClass]="{'sectionRetracted': !isKavaExpanded}">
+            <div class="sectionz">
+                <div *ngFor="let section of menuKava | slice:0:3; let i = index;">
+                    <div class="sectionzone section other mezedakia">
+                        <h4 class="h4">{{ section.sectionName }}</h4>
+                        <div *ngFor="let item of section.sectionContent">
+                            <div *ngIf="!item.type">
+                                <div class="item-row">
+                                    <h6 class="h6">{{item.name}}</h6>
+                                    <span class="dots"></span>
+                                    <div class="price">{{item.price}}</div>
+                                </div>
+                                <p>{{item.description}}</p>
                             </div>
-                            <p>{{item.description}}</p>
-                        </div>
-                        <div *ngIf="item.type">
-                            <h6 class="h6 padding" *ngIf="item.type === 'title'">{{item.name}}</h6>
-                            <div *ngIf="item.type === 'category'" class="item-row">
-                                <p class="noWrap">{{item.category}}</p>
-                                <span class="dotsCategory"></span>
-                                <div class="price priceCategory">{{item.price}}</div>
+                            <div *ngIf="item.type">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <div *ngIf="item.type === 'category'" class="item-row">
+                                    <p class="noWrap">{{item.category}}</p>
+                                    <span class="dotsCategory"></span>
+                                    <div class="price priceCategory">{{item.price}}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sectionz">
-            <div *ngFor="let section of menuKava | slice:3:7; let i = index;">
-                <div class="sectionzone section other tigani">
-                    <h4 class="h4">{{section.sectionName}}</h4>
-                    <div *ngFor="let item of section.sectionContent">
-                        <div *ngIf="!item.type">
-                            <div class="item-row">
-                                <h6 class="h6">{{item.name}}</h6>
-                                <span class="dots"></span>
-                                <div class="price">{{item.price}}</div>
+            <div class="sectionz">
+                <div *ngFor="let section of menuKava | slice:3:7; let i = index;">
+                    <div class="sectionzone section other tigani">
+                        <h4 class="h4">{{section.sectionName}}</h4>
+                        <div *ngFor="let item of section.sectionContent">
+                            <div *ngIf="!item.type">
+                                <div class="item-row">
+                                    <h6 class="h6">{{item.name}}</h6>
+                                    <span class="dots"></span>
+                                    <div class="price">{{item.price}}</div>
+                                </div>
+                                <p>{{item.description}}</p>
                             </div>
-                            <p>{{item.description}}</p>
-                        </div>
-                        <div *ngIf="item.type">
-                            <h6 class="h6 padding" *ngIf="item.type === 'title'">{{item.name}}</h6>
-                            <div *ngIf="item.type === 'category'" class="item-row">
-                                <p class="noWrap">{{item.category}}</p>
-                                <span class="dotsCategory"></span>
-                                <div class="price priceCategory">{{item.price}}</div>
+                            <div *ngIf="item.type">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <div *ngIf="item.type === 'category'" class="item-row">
+                                    <p class="noWrap">{{item.category}}</p>
+                                    <span class="dotsCategory"></span>
+                                    <div class="price priceCategory">{{item.price}}</div>
+                                </div>
                             </div>
                         </div>
                     </div>
