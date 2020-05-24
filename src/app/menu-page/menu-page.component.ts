@@ -10,8 +10,8 @@ import { kouzina, kava } from '../../app/app.menu-model';
 export class MenuPageComponent implements OnInit {
   public menuKouzina = kouzina;
   public menuKava = kava;
-  public isKouzinaExpanded = false;
-  public isKavaExpanded = false;
+  public isKouzinaExpanded = true;
+  public isKavaExpanded = true;
 
   constructor() { }
 
