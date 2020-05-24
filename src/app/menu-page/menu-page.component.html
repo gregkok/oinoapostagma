@@ -1,6 +1,6 @@
 <div class="containerz container-small intro">
     <div class="page-header">
-        <h1 class="tittle">Καλώς ήατε στο Οινοαπόσταγμα</h1>
+        <h1 class="tittle">Καλώς ήρθατε στο Οινοαπόσταγμα</h1>
     </div>
     <p>
         Για να στήσουμε ένα πιάτο επιλέγουμε τα πιο μαλακά και ζουμερά ελληνικά κρέατα, και τα συνοδεύουμε είτε με
@@ -12,7 +12,9 @@
     <div class="kouzinaSection">
         <div class="sectionTitle"
             [ngClass]="{'minus': isKouzinaExpanded, 'plus': !isKouzinaExpanded}"
-            (click)="onSectionClick('kouzina')">Η κουζίνα</div>
+            (click)="onSectionClick('kouzina')">
+            Η κουζίνα
+        </div>
         <div class="bg-green menu-wrapper" [ngClass]="{'sectionRetracted': !isKouzinaExpanded}">
             <div class="sectionz">
                 <div *ngFor="let section of menuKouzina">
