@@ -55,14 +55,14 @@ export class MenuPageComponent implements OnInit {
     }
   }
 
-   onItemClick(itemNumber: number) {
-   // if (this.currentId === itemNumber) {
-     // this.currentId = undefined;
-   // } else {
-    //  this.currentId = itemNumber;
-  //  }
-   // this.setAccordionMaxHeight();
- }
+  onItemClick(itemNumber: number) {
+    if (this.currentId === itemNumber) {
+      this.currentId = undefined;
+    } else {
+      this.currentId = itemNumber;
+    }
+    this.setAccordionMaxHeight();
+  }
 
   setAccordionMaxHeight() {
     if (this.currentId !== undefined) {
