@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { kouzina, kava } from '../../app/app.menu-model';
+import { WindowRefService } from '../service/window-ref.service';
 
 @Component({
   selector: 'app-menu-page',
@@ -12,12 +13,17 @@ export class MenuPageComponent implements OnInit {
   public menuKava = kava;
   public isKouzinaExpanded = true;
   public isKavaExpanded = true;
+  public document = this.windowRef.nativeWindow.document;
+  public currentId: number;
+  public currentMaxHeight;
+  public imageOpened;
+  private currentImgeElement: any;
+  private previousImgeElement: any;
+  private previousId;
 
-  constructor() { }
+  constructor(private windowRef: WindowRefService) { }
 
   ngOnInit() {
-    console.log('menuKouzina', this.menuKouzina);
-    console.log('menuKava', this.menuKava);
   }
 
   onSectionClick(type: string) {
@@ -31,11 +37,26 @@ export class MenuPageComponent implements OnInit {
     }
   }
 
-  //   WIFI :
-  // Oinoapostagma
+  onItemClick(itemNumber: number) {
+    if (this.currentId === itemNumber) {
+      this.currentId = undefined;
+    } else {
+      this.currentId = itemNumber;
+    }
+    this.setAccordionMaxHeight();
+  }
 
-  // Ο καταναλωτής δεν εχει υποχρέωση
-  // να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό στοιχείο
-  // ( απόδειξη ή τιμολόγιο )
-
+  setAccordionMaxHeight() {
+    if (this.currentId !== undefined) {
+      if (this.previousId) {
+        this.previousImgeElement = this.document.getElementById(this.previousId);
+        this.previousImgeElement.style.maxHeight = 0;
+      }
+      this.currentImgeElement = this.document.getElementById(this.currentId);
+      this.currentImgeElement.style.maxHeight = this.currentImgeElement.scrollHeight + 'px';
+    } else {
+      this.currentImgeElement.style.maxHeight = 0;
+    }
+    this.previousId = this.currentId;
+  }
 }

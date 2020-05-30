@@ -9,10 +9,8 @@
     </p>
 </div>
 <div>
-    <div class="kouzinaSection">
-        <div class="sectionTitle"
-            [ngClass]="{'minus': isKouzinaExpanded, 'plus': !isKouzinaExpanded}"
-            (click)="onSectionClick('kouzina')">
+    <div>
+        <div class="sectionTitle minus" [ngClass]="{'plus': !isKouzinaExpanded}" (click)="onSectionClick('kouzina')">
             Η κουζίνα
         </div>
         <div class="bg-green menu-wrapper" [ngClass]="{'sectionRetracted': !isKouzinaExpanded}">
@@ -22,31 +20,50 @@
                         <h4 class="h4">{{ section.sectionName }}</h4>
                         <div *ngFor="let item of section.sectionContent">
                             <div class="salads">
-                                <h6 class="h6">{{item.name}}</h6>
+                                <h6 class="h6" (click)="onItemClick(item.id)"
+                                    [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                    {{item.name}}</h6>
                                 <p>{{item.description}}</p>
                                 <div class="price">{{item.price}}</div>
+                            </div>
+                            <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                [ngClass]="{'itemImageOpen salates': currentId === item.id}">
+                                <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div *ngFor="let section of menuKouzina">
+                <div *ngFor="let section of menuKouzina; let a = index">
                     <div *ngIf="section.sectionName === 'Μεζεδακια'" class="sectionzone section other mezedakia">
                         <h4 class="h4">{{ section.sectionName }}</h4>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
-                                <div class="item-row">
-                                    <h6 class="h6">{{item.name}}</h6>
-                                    <span class="dots"></span>
-                                    <div class="price">{{item.price}}</div>
+                                <div>
+                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                            {{item.name}}</h6>
+                                        <span class="dots"></span>
+                                        <div class="price">{{item.price}}</div>
+                                    </div>
+                                    <p>{{item.description}}</p>
                                 </div>
-                                <p>{{item.description}}</p>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
+                                </div>
                             </div>
                             <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                                    [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                    {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
                                     <p class="noWrap">{{item.category}}</p>
                                     <span class="dotsCategory"></span>
                                     <div class="price priceCategory">{{item.price}}</div>
+                                </div>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
                         </div>
@@ -54,25 +71,38 @@
                 </div>
             </div>
             <div class="sectionz">
-                <div *ngFor="let section of menuKouzina">
+                <div *ngFor="let section of menuKouzina; let a = index">
                     <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
                         class="sectionzone section other tigani">
                         <h4 class="h4">{{section.sectionName}}</h4>
-                        <div *ngFor="let item of section.sectionContent">
+                        <div *ngFor="let item of section.sectionContent; let i = index">
                             <div *ngIf="!item.type">
-                                <div class="item-row">
-                                    <h6 class="h6">{{item.name}}</h6>
-                                    <span class="dots"></span>
-                                    <div class="price">{{item.price}}</div>
+                                <div>
+                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                            {{item.name}}</h6>
+                                        <span class="dots"></span>
+                                        <div class="price">{{item.price}}</div>
+                                    </div>
+                                    <p>{{item.description}}</p>
                                 </div>
-                                <p>{{item.description}}</p>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
+                                </div>
                             </div>
                             <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                                    [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                    {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
                                     <p class="noWrap">{{item.category}}</p>
                                     <span class="dotsCategory"></span>
                                     <div class="price priceCategory">{{item.price}}</div>
+                                </div>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
                         </div>
@@ -81,30 +111,43 @@
             </div>
         </div>
     </div>
-    <div class="kavaSection">
-        <div class="sectionTitle kava"
-            [ngClass]="{'minus': isKavaExpanded, 'plus': !isKavaExpanded}"
-            (click)="onSectionClick('kava')">Η κάβα</div>
+    <div>
+        <div class="sectionTitle kava minus" [ngClass]="{'plus': !isKavaExpanded}" (click)="onSectionClick('kava')">
+            Η κάβα
+        </div>
         <div class="bg-green menu-wrapper" [ngClass]="{'sectionRetracted': !isKavaExpanded}">
             <div class="sectionz">
-                <div *ngFor="let section of menuKava | slice:0:3; let i = index;">
+                <div *ngFor="let section of menuKava | slice:0:3; let a = index;">
                     <div class="sectionzone section other mezedakia">
                         <h4 class="h4">{{ section.sectionName }}</h4>
-                        <div *ngFor="let item of section.sectionContent">
+                        <div *ngFor="let item of section.sectionContent; let i = index">
                             <div *ngIf="!item.type">
-                                <div class="item-row">
-                                    <h6 class="h6">{{item.name}}</h6>
-                                    <span class="dots"></span>
-                                    <div class="price">{{item.price}}</div>
+                                <div>
+                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                            {{item.name}}</h6>
+                                        <span class="dots"></span>
+                                        <div class="price">{{item.price}}</div>
+                                    </div>
+                                    <p>{{item.description}}</p>
                                 </div>
-                                <p>{{item.description}}</p>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
+                                </div>
                             </div>
                             <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                                    [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                    {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
                                     <p class="noWrap">{{item.category}}</p>
                                     <span class="dotsCategory"></span>
                                     <div class="price priceCategory">{{item.price}}</div>
+                                </div>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
                         </div>
@@ -112,24 +155,37 @@
                 </div>
             </div>
             <div class="sectionz">
-                <div *ngFor="let section of menuKava | slice:3:7; let i = index;">
+                <div *ngFor="let section of menuKava | slice:3:7; let a = index;">
                     <div class="sectionzone section other tigani">
                         <h4 class="h4">{{section.sectionName}}</h4>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
-                                <div class="item-row">
-                                    <h6 class="h6">{{item.name}}</h6>
-                                    <span class="dots"></span>
-                                    <div class="price">{{item.price}}</div>
+                                <div>
+                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                            {{item.name}}</h6>
+                                        <span class="dots"></span>
+                                        <div class="price">{{item.price}}</div>
+                                    </div>
+                                    <p>{{item.description}}</p>
                                 </div>
-                                <p>{{item.description}}</p>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
+                                </div>
                             </div>
                             <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding">{{item.name}}</h6>
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                                    [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                    {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
                                     <p class="noWrap">{{item.category}}</p>
                                     <span class="dotsCategory"></span>
                                     <div class="price priceCategory">{{item.price}}</div>
+                                </div>
+                                <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                    [ngClass]="{'itemImageOpen': currentId === item.id}">
+                                    <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
                         </div>
@@ -137,6 +193,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="bg-green dividerWrapper">
+        <div class="divider"></div>
+    </div>
+    <div class="bg-green menu-wrapper wifyAndDisclaimer">
+        <div class="sectionz sectionzone section other disclaimer">WIFI: Oinoapostagma</div>
+        <div class="sectionz sectionzone section other disclaimer">Ο καταναλωτής δεν εχει υποχρέωση
+            να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό στοιχείο
+            ( απόδειξη ή τιμολόγιο )</div>
     </div>
 </div>
 
