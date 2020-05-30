@@ -28,7 +28,7 @@ export const kouzina: Section[] = [
                 description: 'Σαλάτα με αποξηραμένα σύκα, κατίκι, προσούτο παστέλι και βινεγκρέτ',
                 price: '8.80',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -38,7 +38,7 @@ export const kouzina: Section[] = [
                 description: 'Μαρούλι, κοτόπουλο, παρμεζάνα, καλαμπόκι, κρουτόν και μπέικον',
                 price: '7.80',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -48,7 +48,7 @@ export const kouzina: Section[] = [
                 description: 'Παξιμαδάκια, ντομάτα, φέτα, κάπαρη και ελιές',
                 price: '5.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -58,7 +58,7 @@ export const kouzina: Section[] = [
                 description: 'Ντομάτα, αγγούρι, κρεμμύδι, πιπεριές, φέτα και ελιές',
                 price: '5.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -68,7 +68,7 @@ export const kouzina: Section[] = [
                 description: 'Ανάμεικτη σαλάτα, κράνμπερι, καβουρδισμένο κουκουνάρι, ξινόμηλα, ανθότυρο και σως ροδιού',
                 price: '8.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -82,7 +82,7 @@ export const kouzina: Section[] = [
                 name: 'Φέτα με λαδορίγανη',
                 price: '3.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -91,7 +91,7 @@ export const kouzina: Section[] = [
                 name: 'Σαγανάκι κεφαλοτύρι',
                 price: '4.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -100,7 +100,7 @@ export const kouzina: Section[] = [
                 name: 'Πατάτες τηγανιτές',
                 price: '3.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -110,7 +110,7 @@ export const kouzina: Section[] = [
                 description: 'Με λιωμένο τυρί και μπέικον',
                 price: '5.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -120,7 +120,7 @@ export const kouzina: Section[] = [
                 description: 'Στο αλουμινόχαρτο',
                 price: '5.80',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -130,7 +130,7 @@ export const kouzina: Section[] = [
                 description: 'Γεμιστά με τυρί',
                 price: '6.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -140,7 +140,7 @@ export const kouzina: Section[] = [
                 description: 'Με μοσχαρίσιο κρέας',
                 price: '7.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -149,7 +149,7 @@ export const kouzina: Section[] = [
                 name: 'Τηγανόψωμο',
                 price: '6.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -159,7 +159,7 @@ export const kouzina: Section[] = [
                 description: 'Με μέλι και  φέτα',
                 price: '5.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -174,7 +174,7 @@ export const kouzina: Section[] = [
                 description: 'Με πιπεριές',
                 price: '6.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -184,7 +184,7 @@ export const kouzina: Section[] = [
                 description: 'Σβησμένη με μαστίχα, και σως φέτας',
                 price: '6.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -194,7 +194,7 @@ export const kouzina: Section[] = [
                 description: 'Σβησμένη με κρασί',
                 price: '7.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -203,7 +203,7 @@ export const kouzina: Section[] = [
                 name: 'Κολοκυθοκεφτέδες',
                 price: '4.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -212,7 +212,7 @@ export const kouzina: Section[] = [
                 name: 'Κεφτεδάκια κοκκινιστά',
                 price: '6.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -222,7 +222,7 @@ export const kouzina: Section[] = [
                 description: 'Στην σχάρα',
                 price: '6.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -231,7 +231,7 @@ export const kouzina: Section[] = [
                 name: 'Αυγά με πατάτες',
                 price: '4.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -241,7 +241,7 @@ export const kouzina: Section[] = [
                 description: 'Με μέλι και σουσάμι',
                 price: '5.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -256,7 +256,7 @@ export const kouzina: Section[] = [
                 description: 'Στην σχάρα',
                 price: '8.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -266,7 +266,7 @@ export const kouzina: Section[] = [
                 description: 'Με φέτα',
                 price: '8.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -276,7 +276,7 @@ export const kouzina: Section[] = [
                 description: 'Με ψητά λαχανικά',
                 price: '8.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -286,7 +286,7 @@ export const kouzina: Section[] = [
                 description: 'Με πατάτες και σως Οινοαπόσταγμα',
                 price: '7.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -294,9 +294,9 @@ export const kouzina: Section[] = [
                 id: 26,
                 name: 'Μπριζολάκια χοιρινά',
                 description: 'Με πατάτες και σως BBQ',
-                price: '6.50',
+                price: '7.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -305,7 +305,7 @@ export const kouzina: Section[] = [
                 name: 'Φιλέτο στήθος κοτόπουλο',
                 price: '7.80',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -315,7 +315,7 @@ export const kouzina: Section[] = [
                 description: 'Με πατάτες',
                 price: '7.80',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -324,16 +324,7 @@ export const kouzina: Section[] = [
                 name: 'Λουκάνικο χωριάτικο',
                 price: '6.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 30,
-                name: 'Πιτούλα ψημένη',
-                price: '0.50',
-                image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -342,52 +333,59 @@ export const kouzina: Section[] = [
     {
         sectionName: 'Για την μέση',
         sectionContent: [
-            {id: 31,
+            {
+                id: 31,
                 name: 'Σπαλομπριζόλα',
                 description: '2 ατόμων 600γρ',
                 price: '16.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
-            {id: 32,
+            {
+                id: 32,
                 name: 'Ποικιλία κρεατικων',
                 price: '',
                 type: 'title',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
-            {id: 33,
+            {
+                id: 33,
                 name: '',
                 category: '2 ατόμων',
                 price: '16.00',
                 type: 'category'
             },
-            {id: 34,
+            {
+                id: 34,
                 name: '',
                 category: '4 ατόμων',
                 price: '32.00',
                 type: 'category'
             },
-            {id: 35,
+            {
+                id: 35,
                 name: 'Μεζες',
                 price: '',
                 type: 'title',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
-            {id: 36,
+            {
+                id: 36,
                 name: '',
                 category: 'Για 2',
                 price: '8.00',
                 type: 'category'
             },
-            {id: 37,
+            {
+                id: 37,
                 name: '',
                 category: 'Για 4',
                 price: '16.00',
@@ -407,7 +405,7 @@ export const kava: Section[] = [
                 description: 'Χωρίς γλυκάνισο 200ml',
                 price: '8.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -417,7 +415,7 @@ export const kava: Section[] = [
                 description: 'Με γλυκάνισο 200ml',
                 price: '9.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -426,7 +424,7 @@ export const kava: Section[] = [
                 name: 'Αγιονέρι παλαιωμένο τσίπουρο',
                 price: '11.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -435,7 +433,7 @@ export const kava: Section[] = [
                 name: 'Αποστολάκη ',
                 price: '11.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -444,7 +442,7 @@ export const kava: Section[] = [
                 name: 'Δεκαράκι',
                 price: '8.70',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -454,7 +452,7 @@ export const kava: Section[] = [
                 price: '',
                 type: 'title',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -483,7 +481,7 @@ export const kava: Section[] = [
                 price: '',
                 type: 'title',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -514,7 +512,7 @@ export const kava: Section[] = [
                 price: '',
                 type: 'title',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -545,7 +543,7 @@ export const kava: Section[] = [
                 price: '',
                 type: 'title',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -580,7 +578,7 @@ export const kava: Section[] = [
                 name: 'Καζανιστό 200ml',
                 price: '8.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -589,7 +587,7 @@ export const kava: Section[] = [
                 name: 'Βενιαμίν 200ml',
                 price: '8.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -598,16 +596,16 @@ export const kava: Section[] = [
                 name: 'Ποτήρι',
                 price: '3.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
             {
                 id: 61,
                 name: 'Πλωμάρι 200ml',
-                price: '9.00',
+                price: '9.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -616,7 +614,7 @@ export const kava: Section[] = [
                 name: 'Βαρβαγιάννη μπλε',
                 price: '10.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -630,7 +628,7 @@ export const kava: Section[] = [
                 name: 'Άλφα ποτήρι μικρό',
                 price: '3.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -639,7 +637,7 @@ export const kava: Section[] = [
                 name: 'Άλφα ποτήρι μεγάλο',
                 price: '4.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -648,7 +646,7 @@ export const kava: Section[] = [
                 name: 'Heineken',
                 price: '4.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -657,7 +655,7 @@ export const kava: Section[] = [
                 name: 'Άμστελ',
                 price: '4.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -666,7 +664,7 @@ export const kava: Section[] = [
                 name: 'Mάμος',
                 price: '4.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -675,7 +673,7 @@ export const kava: Section[] = [
                 name: 'Άλφα χωρίς αλκοόλ',
                 price: '4.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -690,7 +688,7 @@ export const kava: Section[] = [
                 price: '',
                 type: 'title',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -721,7 +719,7 @@ export const kava: Section[] = [
                 description: 'Μπουκάλι',
                 price: '15.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -731,7 +729,7 @@ export const kava: Section[] = [
                 description: 'Μπουκάλι',
                 price: '',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -745,7 +743,7 @@ export const kava: Section[] = [
                 name: 'Coca Cola',
                 price: '2.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -754,7 +752,7 @@ export const kava: Section[] = [
                 name: 'Coca Cola light',
                 price: '2.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -763,7 +761,7 @@ export const kava: Section[] = [
                 name: 'Βίκος γκαζόζα',
                 price: '2.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -772,7 +770,7 @@ export const kava: Section[] = [
                 name: 'Βίκος πορτοκαλάδα',
                 price: '2.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -781,7 +779,7 @@ export const kava: Section[] = [
                 name: 'Πορτοκαλάδα μπλε',
                 price: '2.20',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -790,7 +788,7 @@ export const kava: Section[] = [
                 name: 'Σόδα',
                 price: '2.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -799,7 +797,7 @@ export const kava: Section[] = [
                 name: 'Νερό Βίκος ',
                 price: '1.50',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -813,7 +811,7 @@ export const kava: Section[] = [
                 name: 'Ουίσκι',
                 price: '7.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -822,7 +820,7 @@ export const kava: Section[] = [
                 name: 'Βότκα',
                 price: '7.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -831,7 +829,7 @@ export const kava: Section[] = [
                 name: 'Τζιν',
                 price: '7.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -840,7 +838,7 @@ export const kava: Section[] = [
                 name: 'Ρούμι',
                 price: '7.00',
                 image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageURL: '',
                     imageDescription: 'kataifakia',
                 }
             },

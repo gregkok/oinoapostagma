@@ -38,12 +38,12 @@ export class MenuPageComponent implements OnInit {
   }
 
   onItemClick(itemNumber: number) {
-    if (this.currentId === itemNumber) {
-      this.currentId = undefined;
-    } else {
-      this.currentId = itemNumber;
-    }
-    this.setAccordionMaxHeight();
+    // if (this.currentId === itemNumber) {
+    //   this.currentId = undefined;
+    // } else {
+    //   this.currentId = itemNumber;
+    // }
+    // this.setAccordionMaxHeight();
   }
 
   setAccordionMaxHeight() {
