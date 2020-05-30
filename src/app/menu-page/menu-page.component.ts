@@ -48,7 +48,7 @@ export class MenuPageComponent implements OnInit {
 
   setAccordionMaxHeight() {
     if (this.currentId !== undefined) {
-      if (this.previousId) {
+      if (this.previousId !== undefined) {
         this.previousImgeElement = this.document.getElementById(this.previousId);
         this.previousImgeElement.style.maxHeight = 0;
       }
