@@ -8,13 +8,15 @@ export interface Item {
     name: string;
     description?: string;
     category?: string;
-    price: string;
+    price?: string;
     type?: string;
     image?: ItemImage;
+    isNew?: boolean;
 }
 
 export interface Section {
     sectionName: string;
+    isNew?: boolean;
     sectionContent: Item[];
 }
 
@@ -70,7 +72,8 @@ export const kouzina: Section[] = [
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
-                }
+                },
+                isNew: true
             },
         ]
     },
@@ -166,80 +169,12 @@ export const kouzina: Section[] = [
         ]
     },
     {
-        sectionName: 'Τηγανι',
+        sectionName: 'Θαλασσινά',
+        isNew: true,
         sectionContent: [
             {
-                id: 14,
-                name: 'Τηγανιά κοτόπουλο αλα κρέμ',
-                description: 'Με πιπεριές',
-                price: '6.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 15,
-                name: 'Τηγανιά κοτόπουλο',
-                description: 'Σβησμένη με μαστίχα, και σως φέτας',
-                price: '6.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 16,
-                name: 'Τηγανιά χοιρινή',
-                description: 'Σβησμένη με κρασί',
-                price: '7.00',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 17,
-                name: 'Κολοκυθοκεφτέδες',
-                price: '4.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 18,
-                name: 'Κεφτεδάκια κοκκινιστά',
-                price: '6.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 19,
-                name: 'Μανιτάρια πλευρώτους',
-                description: 'Στην σχάρα',
-                price: '6.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 20,
-                name: 'Αυγά με πατάτες',
-                price: '4.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 21,
-                name: 'Φέτα στο τηγάνι',
-                description: 'Με μέλι και σουσάμι',
-                price: '5.50',
+                id: 82,
+                name: 'Προσεχώς',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -298,7 +233,8 @@ export const kouzina: Section[] = [
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
-                }
+                },
+                isNew: true
             },
             {
                 id: 27,
@@ -331,6 +267,90 @@ export const kouzina: Section[] = [
         ]
     },
     {
+        sectionName: 'Τηγανι',
+        sectionContent: [
+            {
+                id: 14,
+                name: 'Τηγανιά κοτόπουλο αλα κρέμ',
+                description: 'Με πιπεριές',
+                price: '6.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 15,
+                name: 'Τηγανιά κοτόπουλο',
+                description: 'Σβησμένη με μαστίχα',
+                price: '6.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
+                id: 16,
+                name: 'Τηγανιά χοιρινή',
+                description: 'Σβησμένη με κρασί και σως φέτας',
+                price: '7.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 17,
+                name: 'Κολοκυθοκεφτέδες',
+                price: '4.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 18,
+                name: 'Κεφτεδάκια κοκκινιστά',
+                price: '6.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
+                id: 19,
+                name: 'Μανιτάρια πλευρώτους',
+                description: 'Στην σχάρα',
+                price: '6.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 20,
+                name: 'Αυγά με πατάτες',
+                price: '4.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 21,
+                name: 'Φέτα στο τηγάνι',
+                description: 'Με μέλι και σουσάμι',
+                price: '5.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+        ]
+    },
+    {
         sectionName: 'Για την μέση',
         sectionContent: [
             {
@@ -341,7 +361,8 @@ export const kouzina: Section[] = [
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
-                }
+                },
+                isNew: true
             },
             {
                 id: 32,
@@ -585,7 +606,7 @@ export const kava: Section[] = [
             {
                 id: 59,
                 name: 'Βενιαμίν 200ml',
-                price: '8.50',
+                price: '9.00',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -604,15 +625,6 @@ export const kava: Section[] = [
                 id: 61,
                 name: 'Πλωμάρι 200ml',
                 price: '9.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 62,
-                name: 'Βαρβαγιάννη μπλε',
-                price: '10.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -710,7 +722,7 @@ export const kava: Section[] = [
                 id: 72,
                 name: '',
                 category: '1 λίτρο',
-                price: '11.00',
+                price: '12.00',
                 type: 'category'
             },
             {
@@ -728,6 +740,47 @@ export const kava: Section[] = [
                 name: 'Κτήμα',
                 description: 'Μπουκάλι',
                 price: '',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+        ]
+    },
+    {
+        sectionName: 'Τα βαριά',
+        sectionContent: [
+            {
+                id: 82,
+                name: 'Ουίσκι',
+                price: '7.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 83,
+                name: 'Βότκα',
+                price: '7.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 84,
+                name: 'Τζιν',
+                price: '7.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 85,
+                name: 'Ρούμι',
+                price: '7.00',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -796,47 +849,6 @@ export const kava: Section[] = [
                 id: 81,
                 name: 'Νερό Βίκος ',
                 price: '1.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-        ]
-    },
-    {
-        sectionName: 'Τα βαριά',
-        sectionContent: [
-            {
-                id: 82,
-                name: 'Ουίσκι',
-                price: '7.00',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 83,
-                name: 'Βότκα',
-                price: '7.00',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 84,
-                name: 'Τζιν',
-                price: '7.00',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 85,
-                name: 'Ρούμι',
-                price: '7.00',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',

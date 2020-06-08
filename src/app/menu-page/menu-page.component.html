@@ -15,14 +15,20 @@
         </div>
         <div class="bg-green menu-wrapper" [ngClass]="{'sectionRetracted': !isKouzinaExpanded}">
             <div class="sectionz">
-                <div *ngFor="let section of menuKouzina">
-                    <div *ngIf="section.sectionName === 'Σαλατες'" class="sectionzone section ">
-                        <h4 class="h4">{{ section.sectionName }}</h4>
+                <div *ngFor="let section of menuKouzina | slice:0:1; let a = index;">
+                    <div class="sectionzone section ">
+                        <div class="item-row-start">
+                            <h4 class="h4">{{ section.sectionName }}</h4>
+                            <h4 *ngIf="section.isNew" class="new newSection">New</h4>
+                        </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div class="salads">
-                                <h6 class="h6" (click)="onItemClick(item.id)"
-                                    [ngClass]="{'h6BeforeActive': currentId === item.id}">
-                                    {{item.name}}</h6>
+                                <div class="item-row-center">
+                                    <h6 class="h6" (click)="onItemClick(item.id)"
+                                        [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                        {{item.name}}</h6>
+                                    <h4 *ngIf="item.isNew" class="new">New</h4>
+                                </div>
                                 <p>{{item.description}}</p>
                                 <div class="price">{{item.price}}</div>
                             </div>
@@ -33,16 +39,22 @@
                         </div>
                     </div>
                 </div>
-                <div *ngFor="let section of menuKouzina; let a = index">
-                    <div *ngIf="section.sectionName === 'Μεζεδακια'" class="sectionzone section other mezedakia">
-                        <h4 class="h4">{{ section.sectionName }}</h4>
+                <div *ngFor="let section of menuKouzina | slice:1:3; let a = index;">
+                    <div class="sectionzone section other mezedakia">
+                        <div class="item-row-start">
+                            <h4 class="h4">{{ section.sectionName }}</h4>
+                            <h4 *ngIf="section.isNew" class="new newSection">New</h4>
+                        </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
                                 <div>
                                     <div class="item-row" (click)="onItemClick(item.id)">
-                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
-                                            {{item.name}}</h6>
-                                        <span class="dots"></span>
+                                        <div class="item-row">
+                                            <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                                {{item.name}}</h6>
+                                            <h4 *ngIf="item.isNew" class="new">New</h4>
+                                        </div>
+                                        <span *ngIf="item.price" class="dots"></span>
                                         <div class="price">{{item.price}}</div>
                                     </div>
                                     <p>{{item.description}}</p>
@@ -71,16 +83,22 @@
                 </div>
             </div>
             <div class="sectionz">
-                <div *ngFor="let section of menuKouzina; let a = index">
+                <div *ngFor="let section of menuKouzina | slice:3:7; let a = index;">
                     <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
                         class="sectionzone section other tigani">
-                        <h4 class="h4">{{section.sectionName}}</h4>
+                        <div class="item-row-start">
+                            <h4 class="h4">{{ section.sectionName }}</h4>
+                            <h4 *ngIf="section.isNew" class="new newSection">New</h4>
+                        </div>
                         <div *ngFor="let item of section.sectionContent; let i = index">
                             <div *ngIf="!item.type">
                                 <div>
                                     <div class="item-row" (click)="onItemClick(item.id)">
-                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
-                                            {{item.name}}</h6>
+                                        <div class="item-row">
+                                            <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                                {{item.name}}</h6>
+                                            <h4 *ngIf="item.isNew" class="new">New</h4>
+                                        </div>
                                         <span class="dots"></span>
                                         <div class="price">{{item.price}}</div>
                                     </div>
@@ -119,13 +137,19 @@
             <div class="sectionz">
                 <div *ngFor="let section of menuKava | slice:0:3; let a = index;">
                     <div class="sectionzone section other mezedakia">
-                        <h4 class="h4">{{ section.sectionName }}</h4>
+                        <div class="item-row-start">
+                            <h4 class="h4">{{ section.sectionName }}</h4>
+                            <h4 *ngIf="section.isNew" class="new newSection">New</h4>
+                        </div>
                         <div *ngFor="let item of section.sectionContent; let i = index">
                             <div *ngIf="!item.type">
                                 <div>
                                     <div class="item-row" (click)="onItemClick(item.id)">
-                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
-                                            {{item.name}}</h6>
+                                        <div class="item-row">
+                                            <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                                {{item.name}}</h6>
+                                            <h4 *ngIf="item.isNew" class="new">New</h4>
+                                        </div>
                                         <span class="dots"></span>
                                         <div class="price">{{item.price}}</div>
                                     </div>
@@ -157,13 +181,19 @@
             <div class="sectionz">
                 <div *ngFor="let section of menuKava | slice:3:7; let a = index;">
                     <div class="sectionzone section other tigani">
-                        <h4 class="h4">{{section.sectionName}}</h4>
+                        <div class="item-row-start">
+                            <h4 class="h4">{{ section.sectionName }}</h4>
+                            <h4 *ngIf="section.isNew" class="new newSection">New</h4>
+                        </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
                                 <div>
                                     <div class="item-row" (click)="onItemClick(item.id)">
-                                        <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
-                                            {{item.name}}</h6>
+                                        <div class="item-row">
+                                            <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                                {{item.name}}</h6>
+                                            <h4 *ngIf="item.isNew" class="new">New</h4>
+                                        </div>
                                         <span class="dots"></span>
                                         <div class="price">{{item.price}}</div>
                                     </div>
@@ -195,10 +225,17 @@
         </div>
     </div>
     <div class="bg-green menu-wrapper wifyAndDisclaimer">
-        <div class="sectionz sectionzone section other disclaimer">WIFI: oinoapostagma</div>
-        <div class="sectionz sectionzone section other disclaimer">Ο καταναλωτής δεν εχει υποχρέωση
-            να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό στοιχείο
-            ( απόδειξη ή τιμολόγιο )</div>
+        <div class="sectionz sectionzone section other disclaimer">
+            <div>WIFI: oinoapostagma</div>
+            <div class="paddingTop">Η κουζίνα μας κλείνει στη 01:30</div>
+        </div>
+        <div class="sectionz sectionzone section other disclaimer">
+            <div>Ο καταναλωτής δεν εχει υποχρέωση
+                να πληρώσει εάν δεν λάβει το νόμιμο παραστατικό στοιχείο
+                ( απόδειξη ή τιμολόγιο )
+            </div>
+            <div class="paddingTop">Υπεύθυνος καταστήματος: Τόρης Ευθύμιος</div>
+        </div>
     </div>
 </div>
 
