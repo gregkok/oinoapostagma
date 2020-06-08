@@ -169,7 +169,7 @@ export const kouzina: Section[] = [
         ]
     },
     {
-        sectionName: 'Θαλασσινά',
+        sectionName: 'Θαλασσινα',
         isNew: true,
         sectionContent: [
             {
