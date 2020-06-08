@@ -22,9 +22,9 @@
                             <h4 *ngIf="section.isNew" class="new newSection">New</h4>
                         </div>
                         <div *ngFor="let item of section.sectionContent">
-                            <div class="salads">
+                            <div class="salads"  (click)="onItemClick(item.id)">
                                 <div class="item-row-center">
-                                    <h6 class="h6" (click)="onItemClick(item.id)"
+                                    <h6 class="h6"
                                         [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                         {{item.name}}</h6>
                                     <h4 *ngIf="item.isNew" class="new">New</h4>
@@ -47,8 +47,8 @@
                         </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
-                                <div>
-                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                <div  (click)="onItemClick(item.id)">
+                                    <div class="item-row">
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                                 {{item.name}}</h6>
@@ -64,8 +64,8 @@
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
-                            <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                            <div *ngIf="item.type"  (click)="onItemClick(item.id)">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding"
                                     [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                     {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
@@ -84,16 +84,15 @@
             </div>
             <div class="sectionz">
                 <div *ngFor="let section of menuKouzina | slice:3:7; let a = index;">
-                    <div *ngIf="section.sectionName !== 'Σαλατες' && section.sectionName !== 'Μεζεδακια'"
-                        class="sectionzone section other tigani">
+                    <div class="sectionzone section other tigani">
                         <div class="item-row-start">
                             <h4 class="h4">{{ section.sectionName }}</h4>
                             <h4 *ngIf="section.isNew" class="new newSection">New</h4>
                         </div>
                         <div *ngFor="let item of section.sectionContent; let i = index">
                             <div *ngIf="!item.type">
-                                <div>
-                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                <div  (click)="onItemClick(item.id)">
+                                    <div class="item-row">
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                                 {{item.name}}</h6>
@@ -109,8 +108,8 @@
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
-                            <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                            <div *ngIf="item.type"  (click)="onItemClick(item.id)">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding"
                                     [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                     {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
@@ -143,8 +142,8 @@
                         </div>
                         <div *ngFor="let item of section.sectionContent; let i = index">
                             <div *ngIf="!item.type">
-                                <div>
-                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                <div  (click)="onItemClick(item.id)">
+                                    <div class="item-row">
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                                 {{item.name}}</h6>
@@ -160,8 +159,8 @@
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
-                            <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                            <div *ngIf="item.type"  (click)="onItemClick(item.id)">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding"
                                     [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                     {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
@@ -187,8 +186,8 @@
                         </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
-                                <div>
-                                    <div class="item-row" (click)="onItemClick(item.id)">
+                                <div  (click)="onItemClick(item.id)">
+                                    <div class="item-row">
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                                 {{item.name}}</h6>
@@ -204,8 +203,8 @@
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div>
                             </div>
-                            <div *ngIf="item.type">
-                                <h6 *ngIf="item.type === 'title'" class="h6 padding" (click)="onItemClick(item.id)"
+                            <div *ngIf="item.type" (click)="onItemClick(item.id)">
+                                <h6 *ngIf="item.type === 'title'" class="h6 padding"
                                     [ngClass]="{'h6BeforeActive': currentId === item.id}">
                                     {{item.name}}</h6>
                                 <div *ngIf="item.type === 'category'" class="item-row">
