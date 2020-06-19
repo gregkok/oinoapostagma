@@ -38,7 +38,7 @@ export const kouzina: Section[] = [
                 id: 1,
                 name: 'Σαλάτα του Καίσαρα',
                 description: 'Μαρούλι, κοτόπουλο, παρμεζάνα, καλαμπόκι, κρουτόν και μπέικον',
-                price: '7.80',
+                price: '8.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -68,7 +68,7 @@ export const kouzina: Section[] = [
                 id: 4,
                 name: 'Σαλάτα Summer',
                 description: 'Ανάμεικτη σαλάτα, κράνμπερι, καβουρδισμένο κουκουνάρι, ξινόμηλα, ανθότυρο και σως ροδιού',
-                price: '8.00',
+                price: '8.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -101,7 +101,7 @@ export const kouzina: Section[] = [
             {
                 id: 7,
                 name: 'Πατάτες τηγανιτές',
-                price: '3.20',
+                price: '3.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -131,7 +131,7 @@ export const kouzina: Section[] = [
                 id: 10,
                 name: 'Μανιτάρια πόρτομπελο',
                 description: 'Γεμιστά με τυρί',
-                price: '6.00',
+                price: '6.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -168,20 +168,20 @@ export const kouzina: Section[] = [
             },
         ]
     },
-    {
-        sectionName: 'Θαλασσινα',
-        isNew: true,
-        sectionContent: [
-            {
-                id: 82,
-                name: 'Προσεχώς',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-        ]
-    },
+    // {
+    //     sectionName: 'Θαλασσινα',
+    //     isNew: true,
+    //     sectionContent: [
+    //         {
+    //             id: 82,
+    //             name: 'Προσεχώς',
+    //             image: {
+    //                 imageURL: '',
+    //                 imageDescription: 'kataifakia',
+    //             }
+    //         },
+    //     ]
+    // },
     {
         sectionName: 'Σχαρα',
         sectionContent: [
@@ -189,7 +189,7 @@ export const kouzina: Section[] = [
                 id: 22,
                 name: 'Μπιφτέκια μοσχαρίσια',
                 description: 'Στην σχάρα',
-                price: '8.00',
+                price: '8.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -199,7 +199,7 @@ export const kouzina: Section[] = [
                 id: 23,
                 name: 'Μπιφτέκια γεμιστά',
                 description: 'Με φέτα',
-                price: '8.50',
+                price: '8.80',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -273,7 +273,7 @@ export const kouzina: Section[] = [
                 id: 14,
                 name: 'Τηγανιά κοτόπουλο αλα κρέμ',
                 description: 'Με πιπεριές',
-                price: '6.50',
+                price: '6.80',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -283,7 +283,7 @@ export const kouzina: Section[] = [
                 id: 15,
                 name: 'Τηγανιά κοτόπουλο',
                 description: 'Σβησμένη με μαστίχα',
-                price: '6.50',
+                price: '7.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -294,7 +294,7 @@ export const kouzina: Section[] = [
                 id: 16,
                 name: 'Τηγανιά χοιρινή',
                 description: 'Σβησμένη με κρασί και σως φέτας',
-                price: '7.00',
+                price: '7.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -308,6 +308,16 @@ export const kouzina: Section[] = [
                     imageURL: '',
                     imageDescription: 'kataifakia',
                 }
+            },
+            {
+                id: 83,
+                name: 'Κεφτεδάκια',
+                price: '6.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
             },
             {
                 id: 18,
@@ -452,7 +462,7 @@ export const kava: Section[] = [
             {
                 id: 41,
                 name: 'Αποστολάκη ',
-                price: '11.00',
+                price: '9.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -462,6 +472,15 @@ export const kava: Section[] = [
                 id: 42,
                 name: 'Δεκαράκι',
                 price: '8.70',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 84,
+                name: 'Ηδωνικό 200ml',
+                price: '9.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
