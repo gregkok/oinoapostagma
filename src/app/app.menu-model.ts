@@ -316,8 +316,7 @@ export const kouzina: Section[] = [
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
-                },
-                isNew: true
+                }
             },
             {
                 id: 18,
