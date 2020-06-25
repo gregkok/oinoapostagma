@@ -12,6 +12,7 @@ export interface Item {
     type?: string;
     image?: ItemImage;
     isNew?: boolean;
+    isPremium?: boolean;
 }
 
 export interface Section {
@@ -310,7 +311,7 @@ export const kouzina: Section[] = [
                 }
             },
             {
-                id: 83,
+                id: 86,
                 name: 'Κεφτεδάκια',
                 price: '6.00',
                 image: {
@@ -477,13 +478,23 @@ export const kava: Section[] = [
                 }
             },
             {
-                id: 84,
+                id: 87,
                 name: 'Ηδωνικό 200ml',
                 price: '9.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
                 }
+            },
+            {
+                id: 90,
+                name: 'Μαυρο Ρόδο 200ml',
+                price: '9.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
             },
             {
                 id: 43,
@@ -648,6 +659,27 @@ export const kava: Section[] = [
                     imageDescription: 'kataifakia',
                 }
             },
+            {
+                id: 88,
+                name: 'Καζανιστό Εξ’ Αποστάξεως',
+                price: '10.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isPremium: true,
+                isNew: true
+            },
+            {
+                id: 89,
+                name: 'Βαρβαγιάννης μπλέ 200ml',
+                price: '9.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
         ]
     },
     {
@@ -672,9 +704,19 @@ export const kava: Section[] = [
                 }
             },
             {
+                id: 92,
+                name: 'Άλφα weiss',
+                price: '4.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
                 id: 65,
                 name: 'Heineken',
-                price: '4.20',
+                price: '4.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -828,6 +870,16 @@ export const kava: Section[] = [
                 }
             },
             {
+                id: 91,
+                name: 'Τhree cents pink grapefruit soda',
+                price: '4.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
                 id: 77,
                 name: 'Βίκος γκαζόζα',
                 price: '2.20',
@@ -875,4 +927,6 @@ export const kava: Section[] = [
         ]
     }
 ];
+
+// max id number: 92
 
