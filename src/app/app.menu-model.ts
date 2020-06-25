@@ -871,7 +871,7 @@ export const kava: Section[] = [
             },
             {
                 id: 91,
-                name: 'Τhree cents pink grapefruit soda',
+                name: 'Τhree cents pink\ngrapefruit soda',
                 price: '4.00',
                 image: {
                     imageURL: '',
