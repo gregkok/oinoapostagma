@@ -619,7 +619,8 @@ export const kava: Section[] = [
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
-                }
+                },
+                isNew: true
             },
             {
                 id: 94,
