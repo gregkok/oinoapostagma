@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WindowRefService } from '../../service/window-ref.service';
 
 @Component({
   selector: 'app-first-image',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstImageComponent implements OnInit {
 
-  constructor() { }
+  isMobile: boolean;
+  window = this.windowRef.nativeWindow;
+
+  constructor(private windowRef: WindowRefService) { }
 
   ngOnInit() {
+    this.isMobile = this.window.innerWidth <= 767;
   }
 
 }

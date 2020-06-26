@@ -50,6 +50,7 @@
     "codelyzer": "^5.2.2",
     "compression-webpack-plugin": "^4.0.0",
     "enhanced-resolve": "^3.4.1",
+    "generate-robotstxt": "^8.0.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

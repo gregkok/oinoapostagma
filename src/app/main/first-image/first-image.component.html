@@ -1,5 +1,6 @@
 <div class="image">
-    <img src="assets/images/trapeziWeb.jpg" alt="">
+    <img *ngIf="isMobile" src="assets/images/trapeziWeb.jpg" alt="">
+    <img *ngIf="!isMobile" src="assets/images/trapeziWebDesktop.jpg" alt="">
     <div class="tag-word">
         <p id="delay">#oinoapostagmaisonparea</p>
     </div>
