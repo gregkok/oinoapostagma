@@ -612,12 +612,29 @@ export const kava: Section[] = [
                 type: 'category'
             },
             {
-                id: 57,
+                id: 93,
+                name: 'Λεμοντσέλο',
+                price: '',
+                type: 'title',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 94,
                 name: '',
-                category: '500ml',
-                price: '16.50',
+                category: '100ml',
+                price: '4.50',
                 type: 'category'
             },
+            {
+                id: 95,
+                name: '',
+                category: '250ml',
+                price: '8.50',
+                type: 'category'
+            }
         ]
     },
     {
@@ -734,7 +751,7 @@ export const kava: Section[] = [
             {
                 id: 67,
                 name: 'Mάμος',
-                price: '4.20',
+                price: '4.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -768,7 +785,7 @@ export const kava: Section[] = [
                 id: 70,
                 name: '',
                 category: 'Ποτήρι',
-                price: '3.50',
+                price: '4.00',
                 type: 'category'
             },
             {
@@ -928,5 +945,5 @@ export const kava: Section[] = [
     }
 ];
 
-// max id number: 92
+// max id number: 95
 
