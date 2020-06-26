@@ -174,7 +174,7 @@ export const kouzina: Section[] = [
     //     isNew: true,
     //     sectionContent: [
     //         {
-    //             id: 82,
+    //             id:,
     //             name: 'Προσεχώς',
     //             image: {
     //                 imageURL: '',
@@ -889,7 +889,7 @@ export const kava: Section[] = [
             },
             {
                 id: 91,
-                name: 'Τhree cents pink\ngrapefruit soda',
+                name: 'Τhree Cents Pink Grapefruit Soda',
                 price: '4.00',
                 image: {
                     imageURL: '',
