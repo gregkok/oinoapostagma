@@ -672,7 +672,7 @@ export const kava: Section[] = [
             },
             {
                 id: 89,
-                name: 'Βαρβαγιάννης μπλέ 200ml',
+                name: 'Βαρβαγιάννη μπλέ 200ml',
                 price: '9.50',
                 image: {
                     imageURL: '',
