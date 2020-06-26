@@ -2,7 +2,7 @@ module.exports = {
     policy: [
       {
         userAgent: "*",
-        disallow:"/"
+        allow:"/"
       }
     ],
     host: "http://oinoapostagma.gr",
