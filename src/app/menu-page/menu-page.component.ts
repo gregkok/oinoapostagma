@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { kouzina, kava } from '../../app/app.menu-model';
 import { WindowRefService } from '../service/window-ref.service';
+import { Title, Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-menu-page',
@@ -9,6 +10,8 @@ import { WindowRefService } from '../service/window-ref.service';
 })
 
 export class MenuPageComponent implements OnInit {
+
+  public title = 'Οινοαπόσταγμα Μενού - Το μαγαζί της παρέας';
   public menuKouzina = kouzina;
   public menuKava = kava;
   public isKouzinaExpanded = true;
@@ -21,9 +24,24 @@ export class MenuPageComponent implements OnInit {
   private previousImgeElement: any;
   private previousId;
 
-  constructor(private windowRef: WindowRefService) { }
+  constructor(
+    private windowRef: WindowRefService,
+    private titleService: Title,
+    private metaTagService: Meta
+  ) { }
 
   ngOnInit() {
+    this.setMetaTitleAndTag();
+  }
+
+  protected setMetaTitleAndTag() {
+    this.titleService.setTitle(this.title);
+    this.metaTagService.updateTag(
+      {
+        name: 'description',
+        content: 'Οινοαποσταγμα, Κρεατικά, κυρίως πιάτα, μεζεδοπιατάκια και φυσικά καλή παρέα με τα καλύτερα οινοαποστάγματα!'
+      }
+    );
   }
 
   onSectionClick(type: string) {
