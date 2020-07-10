@@ -701,6 +701,62 @@ export const kava: Section[] = [
         ]
     },
     {
+        sectionName: 'Οινοιαποστάγματα Σπέσιαλ',
+        isNew: true,
+        sectionContent: [
+            {
+                id: 96,
+                name: 'Ρακί με γεύση φουντούκι',
+                price: '',
+                type: 'title',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
+                id: 94,
+                name: '',
+                category: '100ml',
+                price: '4.50',
+                type: 'category'
+            },
+            {
+                id: 95,
+                name: '',
+                category: '250ml',
+                price: '8.50',
+                type: 'category'
+            },
+            {
+                id: 97,
+                name: 'Ρακί με γεύση καφέ',
+                price: '',
+                type: 'title',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
+                id: 94,
+                name: '',
+                category: '100ml',
+                price: '4.50',
+                type: 'category'
+            },
+            {
+                id: 95,
+                name: '',
+                category: '250ml',
+                price: '8.50',
+                type: 'category'
+            },
+        ]
+    },
+    {
         sectionName: 'Μπύρες',
         sectionContent: [
             {
@@ -723,8 +779,26 @@ export const kava: Section[] = [
             },
             {
                 id: 92,
-                name: 'Άλφα weiss',
+                name: 'Άλφα weiss 500ml',
                 price: '4.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+            },
+            {
+                id: 65,
+                name: 'Heineken 500ml',
+                price: '4.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
+            {
+                id: 98,
+                name: 'Κόρφου κόκκινη 500ml',
+                price: '5.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
@@ -732,26 +806,18 @@ export const kava: Section[] = [
                 isNew: true
             },
             {
-                id: 65,
-                name: 'Heineken',
-                price: '4.50',
-                image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
                 id: 66,
-                name: 'Άμστελ',
-                price: '4.00',
+                name: 'Κόρφου bitter dark 500ml',
+                price: '5.50',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
-                }
+                },
+                isNew: true
             },
             {
                 id: 67,
-                name: 'Mάμος',
+                name: 'Mάμος 500ml',
                 price: '4.50',
                 image: {
                     imageURL: '',
@@ -759,8 +825,28 @@ export const kava: Section[] = [
                 }
             },
             {
+                id: 99,
+                name: 'Fisher 500ml',
+                price: '5.00',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
+                id: 100,
+                name: 'Madam pilsner 330ml',
+                price: '5.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
+            {
                 id: 68,
-                name: 'Άλφα χωρίς αλκοόλ',
+                name: 'Άλφα χωρίς αλκοόλ 330ml',
                 price: '4.00',
                 image: {
                     imageURL: '',
@@ -946,5 +1032,5 @@ export const kava: Section[] = [
     }
 ];
 
-// max id number: 95
+// max id number: 100
 
