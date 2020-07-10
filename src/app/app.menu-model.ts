@@ -846,7 +846,7 @@ export const kava: Section[] = [
             },
             {
                 id: 68,
-                name: 'Άλφα χωρίς αλκοόλ 330ml',
+                name: 'Άλφα χωρίς αλκοόλ 500ml',
                 price: '4.00',
                 image: {
                     imageURL: '',
