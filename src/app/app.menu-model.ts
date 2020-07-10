@@ -797,7 +797,7 @@ export const kava: Section[] = [
             },
             {
                 id: 98,
-                name: 'Κόρφου κόκκινη 500ml',
+                name: 'Κόρφου κόκκινη 330ml',
                 price: '5.50',
                 image: {
                     imageURL: '',
@@ -807,7 +807,7 @@ export const kava: Section[] = [
             },
             {
                 id: 66,
-                name: 'Κόρφου bitter dark 500ml',
+                name: 'Κόρφου bitter dark 330ml',
                 price: '5.50',
                 image: {
                     imageURL: '',
