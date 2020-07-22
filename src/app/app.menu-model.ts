@@ -644,7 +644,7 @@ export const kava: Section[] = [
             {
                 id: 58,
                 name: 'Καζανιστό 200ml',
-                price: '8.50',
+                price: '9.00',
                 image: {
                     imageURL: '',
                     imageDescription: 'kataifakia',
