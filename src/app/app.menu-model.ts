@@ -31,7 +31,7 @@ export const kouzina: Section[] = [
                 description: 'Σαλάτα με αποξηραμένα σύκα, κατίκι, προσούτο παστέλι και βινεγκρέτ',
                 price: '8.80',
                 image: {
-                    imageURL: '',
+                    imageURL: 'assets/images/salataOinoapostagma.jpg',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -163,7 +163,7 @@ export const kouzina: Section[] = [
                 description: 'Με μέλι και  φέτα',
                 price: '5.50',
                 image: {
-                    imageURL: '',
+                    imageURL: 'assets/images/saganaki_meli_squared.jpg',
                     imageDescription: 'kataifakia',
                 }
             },
@@ -232,8 +232,8 @@ export const kouzina: Section[] = [
                 description: 'Με πατάτες και σως BBQ',
                 price: '7.00',
                 image: {
-                    imageURL: '',
-                    imageDescription: 'kataifakia',
+                    imageURL: 'assets/images/mprizolakia.jpg',
+                    imageDescription: 'Mprizolakia xoirina',
                 },
                 isNew: true
             },
