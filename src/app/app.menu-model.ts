@@ -156,7 +156,7 @@ export const kouzina: Section[] = [
                     imageURL: '',
                     imageDescription: 'kataifakia',
                 }
-            }
+            },
             {
                 id: 13,
                 name: 'Καταϊφάκια αλμυρά',
