@@ -138,16 +138,16 @@ export const kouzina: Section[] = [
                     imageDescription: 'kataifakia',
                 }
             },
-            //{
-            //    id: 11,
-            //    name: 'Καρβελάκι γεμιστό',
-            //    description: 'Με μοσχαρίσιο κρέας',
-            //    price: '7.50',
-            //    image: {
-            //        imageURL: '',
-            //        imageDescription: 'kataifakia',
-            //    }
-            //},
+            {
+                id: 11,
+                name: 'Καρβελάκι γεμιστό',
+                description: 'Με μοσχαρίσιο κρέας',
+                price: '7.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
             {
                 id: 12,
                 name: 'Τηγανόψωμο',
@@ -157,16 +157,16 @@ export const kouzina: Section[] = [
                     imageDescription: 'kataifakia',
                 }
             }
-            //{
-            //    id: 13,
-            //    name: 'Καταϊφάκια αλμυρά',
-            //    description: 'Με μέλι και  φέτα',
-            //    price: '5.50',
-            //    image: {
-            //        imageURL: 'assets/images/saganaki_meli_squared.jpg',
-            //        imageDescription: 'kataifakia',
-            //    }
-            //},
+            {
+                id: 13,
+                name: 'Καταϊφάκια αλμυρά',
+                description: 'Με μέλι και  φέτα',
+                price: '5.50',
+                image: {
+                    imageURL: 'assets/images/saganaki_meli_squared.jpg',
+                    imageDescription: 'kataifakia',
+                }
+            },
         ]
     },
     // {
@@ -291,16 +291,16 @@ export const kouzina: Section[] = [
                 },
                 isNew: true
             },
-            //{
-            //    id: 16,
-            //    name: 'Τηγανιά χοιρινή',
-            //    description: 'Σβησμένη με κρασί και σως φέτας',
-            //    price: '7.50',
-            //    image: {
-            //        imageURL: '',
-            //        imageDescription: 'kataifakia',
-            //    }
-            //},
+            {
+                id: 16,
+                name: 'Τηγανιά χοιρινή',
+                description: 'Σβησμένη με κρασί και σως φέτας',
+                price: '7.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                }
+            },
             {
                 id: 17,
                 name: 'Κολοκυθοκεφτέδες',
@@ -319,16 +319,16 @@ export const kouzina: Section[] = [
                     imageDescription: 'kataifakia',
                 }
             },
-            //{
-            //    id: 18,
-            //    name: 'Κεφτεδάκια κοκκινιστά',
-            //    price: '6.50',
-            //    image: {
-            //        imageURL: '',
-            //        imageDescription: 'kataifakia',
-            //    },
-            //    isNew: true
-            //},
+            {
+                id: 18,
+                name: 'Κεφτεδάκια κοκκινιστά',
+                price: '6.50',
+                image: {
+                    imageURL: '',
+                    imageDescription: 'kataifakia',
+                },
+                isNew: true
+            },
             {
                 id: 19,
                 name: 'Μανιτάρια πλευρώτους',
