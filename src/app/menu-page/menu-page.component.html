@@ -29,11 +29,13 @@
                             <h4 class="h4">{{ section.sectionName }}</h4>
                             <h4 *ngIf="section.isNew" class="new newSection">New</h4>
                             <h4 *ngIf="section.isPremium" class="premium newSection">Premium</h4>
+                            <h4 *ngIf="section.isVegeterian" class="vegeterian newSection">Vegeterian</h4>
                         </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div class="salads" (click)="onItemClick(item.id)">
                                 <div class="item-column-center">
                                     <h4 *ngIf="item.isNew" class="new">New</h4>
+                                    <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                 </div>
                                 <div class="item-row-center">
                                     <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
@@ -55,6 +57,7 @@
                             <h4 class="h4">{{ section.sectionName }}</h4>
                             <h4 *ngIf="section.isNew" class="new newSection">New</h4>
                             <h4 *ngIf="section.isPremium" class="premium newSection">Premium</h4>
+                            <h4 *ngIf="section.isVegeterian" class="vegeterian newSection">Vegeterian</h4>
                         </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
@@ -63,6 +66,7 @@
                                         <div class="item-row">
                                             <h4 *ngIf="item.isNew" class="new">New</h4>
                                             <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                            <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                         </div>
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
@@ -74,7 +78,7 @@
                                         <p>{{item.description}}</p>
                                     </div>
                                 </div>
-                               <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
                                     [ngClass]="{'itemImageOpen': currentId === item.id}">
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div> -->
@@ -84,10 +88,13 @@
                                     <div class="item-row">
                                         <h4 *ngIf="item.isNew" class="new">New</h4>
                                         <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                        <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                     </div>
-                                    <h6 *ngIf="item.type === 'title'" class="h6 padding"
-                                        [ngClass]="{'h6BeforeActive': currentId === item.id}">
-                                        {{item.name}}</h6>
+                                    <div *ngIf="item.type === 'title'">
+                                        <h6 class="h6 padding" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                            {{item.name}}</h6>
+                                        <p>{{item.description}}</p>
+                                    </div>
                                     <div *ngIf="item.type === 'category'" class="item-row">
                                         <p class="noWrap">{{item.category}}</p>
                                         <span class="dotsCategory"></span>
@@ -110,6 +117,7 @@
                             <h4 class="h4">{{ section.sectionName }}</h4>
                             <h4 *ngIf="section.isNew" class="new newSection">New</h4>
                             <h4 *ngIf="section.isPremium" class="premium newSection">Premium</h4>
+                            <h4 *ngIf="section.isVegeterian" class="vegeterian newSection">Vegeterian</h4>
                         </div>
                         <div *ngFor="let item of section.sectionContent; let i = index" class="item-wrapper">
                             <div *ngIf="!item.type">
@@ -118,6 +126,7 @@
                                         <div class="item-row">
                                             <h4 *ngIf="item.isNew" class="new">New</h4>
                                             <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                            <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                         </div>
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
@@ -129,7 +138,7 @@
                                         <p>{{item.description}}</p>
                                     </div>
                                 </div>
-                              <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
                                     [ngClass]="{'itemImageOpen': currentId === item.id}">
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div> -->
@@ -139,17 +148,20 @@
                                     <div class="item-row">
                                         <h4 *ngIf="item.isNew" class="new">New</h4>
                                         <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                        <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                     </div>
-                                    <h6 *ngIf="item.type === 'title'" class="h6 padding"
-                                        [ngClass]="{'h6BeforeActive': currentId === item.id}">
-                                        {{item.name}}</h6>
+                                    <div *ngIf="item.type === 'title'">
+                                        <h6 class="h6 padding" [ngClass]="{'h6BeforeActive': currentId === item.id}">
+                                            {{item.name}}</h6>
+                                        <p>{{item.description}}</p>
+                                    </div>
                                     <div *ngIf="item.type === 'category'" class="item-row">
                                         <p class="noWrap">{{item.category}}</p>
                                         <span class="dotsCategory"></span>
                                         <div class="price priceCategory">{{item.price}}</div>
                                     </div>
                                 </div>
-                               <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
                                     [ngClass]="{'itemImageOpen': currentId === item.id}">
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div> -->
@@ -172,6 +184,7 @@
                             <h4 class="h4">{{ section.sectionName }}</h4>
                             <h4 *ngIf="section.isNew" class="new newSection">New</h4>
                             <h4 *ngIf="section.isPremium" class="premium newSection">Premium</h4>
+                            <h4 *ngIf="section.isVegeterian" class="vegeterian newSection">Vegeterian</h4>
                         </div>
                         <div *ngFor="let item of section.sectionContent; let i = index">
                             <div *ngIf="!item.type">
@@ -180,6 +193,7 @@
                                         <div class="item-row">
                                             <h4 *ngIf="item.isNew" class="new">New</h4>
                                             <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                            <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                         </div>
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
@@ -191,7 +205,7 @@
                                         <p>{{item.description}}</p>
                                     </div>
                                 </div>
-                               <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
                                     [ngClass]="{'itemImageOpen': currentId === item.id}">
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div> -->
@@ -201,6 +215,7 @@
                                     <div class="item-row">
                                         <h4 *ngIf="item.isNew" class="new">New</h4>
                                         <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                        <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                     </div>
                                     <h6 *ngIf="item.type === 'title'" class="h6 padding"
                                         [ngClass]="{'h6BeforeActive': currentId === item.id}">
@@ -211,7 +226,7 @@
                                         <div class="price priceCategory">{{item.price}}</div>
                                     </div>
                                 </div>
-                               <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
                                     [ngClass]="{'itemImageOpen': currentId === item.id}">
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div> -->
@@ -227,6 +242,7 @@
                             <h4 class="h4">{{ section.sectionName }}</h4>
                             <h4 *ngIf="section.isNew" class="new newSection">New</h4>
                             <h4 *ngIf="section.isPremium" class="premium newSection">Premium</h4>
+                            <h4 *ngIf="section.isVegeterian" class="vegeterian newSection">Vegeterian</h4>
                         </div>
                         <div *ngFor="let item of section.sectionContent">
                             <div *ngIf="!item.type">
@@ -235,6 +251,7 @@
                                         <div class="item-row">
                                             <h4 *ngIf="item.isNew" class="new">New</h4>
                                             <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                            <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                         </div>
                                         <div class="item-row">
                                             <h6 class="h6" [ngClass]="{'h6BeforeActive': currentId === item.id}">
@@ -246,7 +263,7 @@
                                         <p>{{item.description}}</p>
                                     </div>
                                 </div>
-                               <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
+                                <!-- <div *ngIf="item.image" id={{item.id}} class="itemImage"
                                     [ngClass]="{'itemImageOpen': currentId === item.id}">
                                     <img src="{{item.image.imageURL}}" alt="{{item.image.imageDescription}}">
                                 </div> -->
@@ -256,6 +273,7 @@
                                     <div class="item-row">
                                         <h4 *ngIf="item.isNew" class="new">New</h4>
                                         <h4 *ngIf="item.isPremium" class="premium">Premium</h4>
+                                        <h4 *ngIf="item.isVegeterian" class="vegeterian">Vegeterian</h4>
                                     </div>
                                     <h6 *ngIf="item.type === 'title'" class="h6 padding"
                                         [ngClass]="{'h6BeforeActive': currentId === item.id}">
@@ -286,6 +304,7 @@
     <div class="bg-green menu-wrapper wifyAndDisclaimer">
         <div class="sectionz sectionzone section other disclaimer">
             <div>WIFI: oinoapostagma</div>
+            <div class="paddingTop">Έξτρα dressing: 0.50</div>
             <div class="paddingTop">Η κουζίνα μας κλείνει στις 01:30</div>
         </div>
         <div class="sectionz sectionzone section other disclaimer">
