@@ -55,7 +55,6 @@ export const kouzina: Section[] = [
                     imageURL: '',
                     imageDescription: 'kataifakia',
                 },
-                isVegeterian: true,
             },
             {
                 id: 3,
