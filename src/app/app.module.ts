@@ -18,11 +18,13 @@ import { MenuPageComponent } from './menu-page/menu-page.component';
 import { AboutComponent } from './about/about.component';
 import { LoadingLandingComponent } from './loading-landing/loading-landing.component';
 import { WindowRefService } from './service/window-ref.service';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const appRoutes: Routes = [
   { path: 'menu', component: MenuPageComponent },
   { path: 'about', component: AboutComponent },
   { path: 'home', component: MainComponent},
+  { path: 'gallery', component: GalleryComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
@@ -48,6 +50,7 @@ const appRoutes: Routes = [
     MenuPageComponent,
     AboutComponent,
     LoadingLandingComponent,
+    GalleryComponent,
   ],
   providers: [WindowRefService],
   bootstrap: [AppComponent]
