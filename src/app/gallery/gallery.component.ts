@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WindowRefService } from '../service/window-ref.service';
-import { gallery } from '../../app/gallery-model';
+import { gallery } from './gallery/gallery-model';
 
 
 @Component({
