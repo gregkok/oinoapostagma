@@ -8,7 +8,7 @@ export const gallery: Gallery[] = [
     {
         id: 0,
         description: 'Σαλάτα',
-        src: 'assets/images/galleryImages/8503821.jpg',
+        src: 'assets/images/galleryImages/8503803.jpg',
     },
     {
         id: 1,
@@ -62,11 +62,6 @@ export const gallery: Gallery[] = [
     },
     {
         id: 11,
-        description: 'Σαλάτα',
-        src: 'assets/images/galleryImages/8508264.jpg',
-    },
-    {
-        id: 12,
         description: 'Σαλάτα',
         src: 'assets/images/galleryImages/8508264.jpg',
     },
