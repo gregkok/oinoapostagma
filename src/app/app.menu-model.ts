@@ -180,6 +180,17 @@ export const kouzina: Section[] = [
                 }
             },
             {
+                id: 19,
+                name: 'Μανιτάρια πλευρώτους',
+                description: 'Στην σχάρα',
+                price: '6.50',
+                image: {
+                    imageURL: '../assets/images/saganaki_meli_squared.png',
+                    imageDescription: 'kataifakia',
+                },
+                isVegeterian: true,
+            },
+            {
                 id: 13,
                 name: 'Καταϊφάκια αλμυρά',
                 description: 'Με μέλι και  φέτα',
@@ -189,32 +200,6 @@ export const kouzina: Section[] = [
                     imageDescription: 'kataifakia',
                 }
             },
-        ]
-    },
-    {
-        sectionName: 'Τηγανι',
-        sectionContent: [
-            {
-                id: 14,
-                name: 'Τηγανιά κοτόπουλο αλα κρέμ',
-                description: 'Με πιπεριές',
-                price: '6.50',
-                image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
-                    imageDescription: 'kataifakia',
-                },
-                isVegeterian: true,
-            },
-            // {
-            //     id: 11,
-            //     name: 'Καρβελάκι γεμιστό',
-            //     description: 'Με μοσχαρίσιο κρέας',
-            //     price: '7.50',
-            //     image: {
-            //         imageURL: '',
-            //         imageDescription: 'kataifakia',
-            //     }
-            // },
             {
                 id: 12,
                 name: 'Τηγανόψωμο',
@@ -242,25 +227,6 @@ export const kouzina: Section[] = [
                     imageDescription: 'kataifakia',
                 },
                 isVegeterian: true,
-            },
-            {
-                id: 18,
-                name: 'Κεφτεδάκια κοκκινιστά',
-                price: '6.50',
-                image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
-                    imageDescription: 'kataifakia',
-                }
-            },
-            {
-                id: 19,
-                name: 'Μανιτάρια πλευρώτους',
-                description: 'Στην σχάρα',
-                price: '6.50',
-                image: {
-                    imageURL: '../assets/images/saganaki_meli_squared.png',
-                    imageDescription: 'kataifakia',
-                }
             },
             {
                 id: 106,
