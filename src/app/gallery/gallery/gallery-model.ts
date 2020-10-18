@@ -66,6 +66,11 @@ export const gallery: Gallery[] = [
         src: 'assets/images/galleryImages/8508264.jpg',
     },
     {
+        id: 12,
+        description: 'Σαλάτα',
+        src: 'assets/images/galleryImages/8508264.jpg',
+    },
+    {
         id: 13,
         description: 'Σαλάτα',
         src: 'assets/images/galleryImages/8503796.jpg',
