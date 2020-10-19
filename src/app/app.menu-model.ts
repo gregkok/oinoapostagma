@@ -342,11 +342,6 @@ export const kava: Section[] = [
                 price: '9.50',
             },
             {
-                id: 42,
-                name: 'Δεκαράκι',
-                price: '8.70',
-            },
-            {
                 id: 87,
                 name: 'Ηδωνικό 200ml',
                 price: '9.50',
@@ -647,21 +642,21 @@ export const kava: Section[] = [
                 id: 71,
                 name: '',
                 category: '500ml',
-                price: '6.00',
+                price: '6.50',
                 type: 'category'
             },
             {
                 id: 72,
                 name: '',
                 category: '1 λίτρο',
-                price: '12.00',
+                price: '13.00',
                 type: 'category'
             },
             {
                 id: 73,
                 name: 'Ντουράκη ριζίτης',
                 description: 'Μπουκάλι',
-                price: '15.00',
+                price: '16.00',
             },
             {
                 id: 74,
