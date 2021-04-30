@@ -40,7 +40,7 @@ export const kouzina: Section[] = [
             },
             {
                 id: 2,
-                name: 'Ντάκος - Τούρτα χανιώτικη',
+                name: 'Ντάκος - Τούρτα',
                 description: 'Παξιμαδάκια, ντομάτα, φέτα, κάπαρη και ελιές',
                 price: '5.50',
             },
@@ -50,34 +50,28 @@ export const kouzina: Section[] = [
                 description: 'Ντομάτα, αγγούρι, κρεμμύδι, πιπεριές, φέτα και ελιές',
                 price: '5.50',
             },
-            {
-                id: 4,
-                name: 'Σαλάτα Summer',
-                description: 'Ανάμεικτη σαλάτα, κράνμπερι, καβουρδισμένο κουκουνάρι, ξινόμηλα, ανθότυρο και σως ροδιού',
-                price: '8.50',
-            },
+            // {
+            //     id: 4,
+            //     name: 'Σαλάτα Summer',
+            //     description: 'Ανάμεικτη σαλάτα, κράνμπερι, καβουρδισμένο κουκουνάρι, ξινόμηλα, ανθότυρο και σως ροδιού',
+            //     price: '8.50',
+            // },
             {
                 id: 108,
                 name: 'Πολίτικη',
-                description: 'Λευκό-κόκκινο λάχανο, καρότο, σέλερι, σταφίδες, χαλούμι',
-                price: '8.00',
+                description: 'Λάχανο, καρότο, πολύχρωμες πιπεριές φινόκιο, πράσινο μήλο',
+                price: '7.00',
                 isNew: true,
             },
         ]
     },
     {
-        sectionName: 'Μεζεκλίκια',
+        sectionName: 'Τσιμπολογήματα',
         sectionContent: [
             {
                 id: 5,
                 name: 'Φέτα με λαδορίγανη',
                 price: '3.50',
-            },
-            {
-                id: 104,
-                name: 'Φέτα στο τηγάνι',
-                description: 'Με μέλι και σουσάμι',
-                price: '4.50',
             },
             {
                 id: 6,
@@ -92,61 +86,8 @@ export const kouzina: Section[] = [
             {
                 id: 8,
                 name: 'Πατάτες',
-                description: 'Με λιωμένο τυρί και μπέικον',
+                description: 'Με λιωμένο τυρί και καραμελωμένο μπέικον',
                 price: '5.50',
-            },
-            {
-                id: 9,
-                name: 'Πατάτα γεμιστή',
-                description: 'Με τυρί και μπεικον',
-                price: '5.80',
-            },
-            {
-                id: 101,
-                name: 'Πατάτα γεμιστή',
-                description: 'Με λαχανικά και φυτικό βούτηρο',
-                price: '5.00',
-                isVegeterian: true,
-            },
-            {
-                id: 103,
-                name: 'Αυγά με πατάτες',
-                price: '4.50',
-            },
-            {
-                id: 10,
-                name: 'Μανιτάρια πόρτομπελο',
-                description: 'Γεμιστά με τυρί',
-                price: '6.00',
-            },
-            {
-                id: 19,
-                name: 'Μανιτάρια πλευρώτους',
-                description: 'Στην σχάρα',
-                price: '6.50',
-                isVegeterian: true,
-            },
-            {
-                id: 13,
-                name: 'Καταϊφάκια αλμυρά',
-                description: 'Με μέλι και  φέτα',
-                price: '5.50',
-            },
-            {
-                id: 12,
-                name: 'Τηγανόψωμο',
-                price: '6.00',
-            },
-            {
-                id: 86,
-                name: 'Κεφτεδάκια',
-                price: '6.00',
-            },
-            {
-                id: 105,
-                name: 'Κολοκυθοκεφτέδες',
-                price: '4.50',
-                isVegeterian: true,
             },
             {
                 id: 106,
@@ -156,141 +97,81 @@ export const kouzina: Section[] = [
             {
                 id: 107,
                 name: 'Μελιτζανοσαλάτα καπνιστή',
-                price: '4.00',
+                price: '4.50',
                 isVegeterian: true,
             },
         ]
     },
-    // {
-    //     sectionName: 'Θαλασσινα',
-    //     isNew: true,
-    //     sectionContent: [
-    //         {
-    //             id:,
-    //             name: 'Προσεχώς',
-    //             image: {
-    //                 imageURL: '',
-    //                 imageDescription: 'kataifakia',
-    //             }
-    //         },
-    //     ]
-    // },
     {
-        sectionName: 'Σχαρα',
+        sectionName: 'Μεζεκλίκια',
         sectionContent: [
             {
-                id: 22,
-                name: 'Μπιφτέκια μοσχαρίσια',
+                id: 103,
+                name: 'Αυγά με πατάτες',
+                price: '4.50',
+            },
+            {
+                id: 10,
+                name: 'Μανιτάρια πόρτομπελο',
+                description: 'Γεμιστά με τυρί',
+                price: '6.50',
+            },
+            {
+                id: 19,
+                name: 'Μανιτάρια πλευρώτους',
                 description: 'Στην σχάρα',
-                price: '8.50',
+                price: '6.80',
+                isVegeterian: true,
             },
             {
-                id: 23,
-                name: 'Μπιφτέκια γεμιστά',
-                description: 'Με γραβιέρα',
-                price: '8.80',
+                id: 105,
+                name: 'Ψητά λαχανικά',
+                description: 'Με ανθότυρο και βαλσάμικο',
+                price: '4.50',
+                isVegeterian: true,
             },
             {
-                id: 24,
-                name: 'Μπιφτέκια κοτόπουλο',
-                description: 'Με ψητά λαχανικά',
-                price: '8.50',
+                id: 105,
+                name: 'Αφράτοι Κολοκυθοκεφτέδες',
+                description: 'Με γιαουρτάκι',
+                price: '4.50',
+                isVegeterian: true,
             },
             {
-                id: 25,
-                name: 'Πανσετάκια',
-                description: 'Με πατάτες και σως Οινοαπόσταγμα',
-                price: '7.50',
+                id: 86,
+                name: 'Κεφτεδάκια',
+                price: '6.50',
             },
             {
-                id: 26,
-                name: 'Μπριζολάκια χοιρινά',
-                description: 'Με πατάτες και σως BBQ',
-                price: '7.50',
+                id: 104,
+                name: 'Φέτα στο τηγάνι',
+                description: 'Με μέλι και σουσάμι',
+                price: '5.00',
             },
+            // {
+            //     id: 9,
+            //     name: 'Πατάτα γεμιστή',
+            //     description: 'Με τυρί και μπεικον',
+            //     price: '5.80',
+            // },
+            // {
+            //     id: 101,
+            //     name: 'Πατάτα γεμιστή',
+            //     description: 'Με λαχανικά και φυτικό βούτηρο',
+            //     price: '5.00',
+            //     isVegeterian: true,
+            // },
             {
-                id: 109,
-                name: 'Μπριζόλα χοιρινή',
-                description: 'Σταβλίσια',
-                price: '16.00',
-            },
-            {
-                id: 27,
-                name: 'Φιλέτο στήθος κοτόπουλο',
-                price: '7.80',
-            },
-            {
-                id: 28,
-                name: 'Φιλέτο κοτόπουλο πανέ',
-                description: 'Με πατάτες',
-                price: '7.80',
-            },
-            {
-                id: 108,
-                name: 'Κοτόπουλο ¨Παπιγιόν¨',
-                description: 'Ολόκληρο κοτόπουλο ξεκοκκαλιασμένο με σάλτσα εσπεριδοειδών',
-                price: '15.00',
-            },
-            {
-                id: 29,
-                name: 'Λουκάνικο χωριάτικο',
+                id: 13,
+                name: 'Καταϊφάκια αλμυρά',
+                description: 'Με μέλι και ανθότυρο',
                 price: '6.00',
             },
-        ]
-    },
-    {
-        sectionName: 'Τηγανιές',
-        sectionContent: [
-            {
-                id: 14,
-                name: 'Τηγανιά κοτόπουλο αλα κρέμ',
-                description: 'Με πιπεριές',
-                price: '6.80',
-            },
-            {
-                id: 15,
-                name: 'Τηγανιά κοτόπουλο',
-                description: 'Σβησμένη με μαστίχα',
-                price: '7.50',
-            },
-            {
-                id: 16,
-                name: 'Τηγανιά χοιρινή',
-                description: 'Σβησμένη με κρασί και σως φέτας',
-                price: '7.50',
-            },
-        ]
-    },
-    {
-        sectionName: 'Για την μέση',
-        sectionContent: [
-            {
-                id: 31,
-                name: 'Σπαλομπριζόλα',
-                description: '2 ατόμων 600γρ',
-                price: '21.00',
-            },
-            {
-                id: 32,
-                name: 'Ποικιλία κρεατικων',
-                description: 'Λουκάνικο, πανσέτα, μπριζολάκια, πατάτες, πίτες',
-                price: '',
-                type: 'title',
-            },
-            {
-                id: 33,
-                name: '',
-                category: '2 ατόμων',
-                price: '17.00',
-                type: 'category'
-            },
-            {
-                id: 34,
-                name: '',
-                category: '4 ατόμων',
-                price: '34.00',
-                type: 'category'
-            },
+            // {
+            //     id: 12,
+            //     name: 'Τηγανόψωμο',
+            //     price: '6.00',
+            // },
             {
                 id: 35,
                 name: 'Μεζες',
@@ -310,6 +191,193 @@ export const kouzina: Section[] = [
                 category: 'Για 4',
                 price: '16.00',
                 type: 'category'
+            },
+        ]
+    },
+    {
+        sectionName: 'Για μερακλήδες',
+        sectionContent: [
+            {
+                id: 118,
+                name: 'Παστουρμάς',
+                price: '5.00',
+            },
+            {
+                id: 119,
+                name: 'Απάκι',
+                price: '5.00',
+            },
+            {
+                id: 120,
+                name: 'Σουτζούκι',
+                price: '5.00',
+            },
+            {
+                id: 121,
+                name: 'Καβουρμάς',
+                price: '5.00',
+            },
+            {
+                id: 122,
+                name: 'Η ποικιλία του μερακλή',
+                price: '9.00',
+            },
+        ]
+    },
+    // {
+    //     sectionName: 'Θαλασσινα',
+    //     isNew: true,
+    //     sectionContent: [
+    //         {
+    //             id:,
+    //             name: 'Προσεχώς',
+    //             image: {
+    //                 imageURL: '',
+    //                 imageDescription: 'kataifakia',
+    //             }
+    //         },
+    //     ]
+    // },
+    {
+        sectionName: 'Τηγανιές',
+        sectionContent: [
+            {
+                id: 14,
+                name: 'Τηγανιά κοτόπουλο αλα κρέμ',
+                description: 'Με πιπεριές και μπείκον',
+                price: '7.80',
+            },
+            {
+                id: 15,
+                name: 'Τηγανιά κοτόπουλο',
+                description: 'Σβησμένη με μαστίχα',
+                price: '7.80',
+            },
+            {
+                id: 16,
+                name: 'Τηγανιά χοιρινή "μεθυσμένη"',
+                description: 'Σβησμένη με κρασί και σως φέτας',
+                price: '7.80',
+            },
+            {
+                id: 123,
+                name: 'Τηγανιά"',
+                description: 'με ποικιλία μανιταριών και ανθότυρο',
+                price: '7.00',
+                isVegeterian: true,
+            },
+        ]
+    },
+    {
+        sectionName: 'Σχαρα',
+        sectionContent: [
+            {
+                id: 22,
+                name: 'Μπιφτέκια μοσχαρίσια',
+                description: 'Στην σχάρα',
+                price: '8.50',
+            },
+            {
+                id: 23,
+                name: 'Μπιφτέκια λαχανικών',
+                price: '8.80',
+            },
+            {
+                id: 24,
+                name: 'Μπιφτέκια κοτόπουλο',
+                description: 'Με ψητά λαχανικά',
+                price: '8.50',
+            },
+            {
+                id: 25,
+                name: 'Πανσετάκια',
+                description: 'Με πατάτες και σως',
+                price: '8.00',
+            },
+            {
+                id: 27,
+                name: 'Φιλέτο στήθος κοτόπουλο',
+                price: '7.80',
+            },
+            {
+                id: 28,
+                name: 'Φιλέτο κοτόπουλο πανέ',
+                description: 'Με πατάτες',
+                price: '7.80',
+            },
+            {
+                id: 29,
+                name: 'Λουκάνικο χωριάτικο Βόλου',
+                price: '6.50',
+            },
+            {
+                id: 26,
+                name: 'Ζουμερά μπριζολάκια χοιρινά',
+                description: 'Με πατάτες και σως BBQ',
+                price: '8.00',
+            },
+            {
+                id: 109,
+                name: 'Σπαλομπριζόλα μοσχαρίσια',
+                description: '2 ατομων',
+                price: '21.00',
+            },
+            {
+                id: 123,
+                name: 'Παιδάκια αρνιού καρέ"',
+                price: '15.00',
+            },
+            {
+                id: 32,
+                name: 'Ποικιλία κρεατικων',
+                description: 'Λουκάνικο, πανσέτα, μπριζολάκια, πατάτες, μπιφτέκια, πίτες',
+                price: '',
+                type: 'title',
+            },
+            {
+                id: 33,
+                name: '',
+                category: '2 ατόμων',
+                price: '18.00',
+                type: 'category'
+            },
+            {
+                id: 34,
+                name: '',
+                category: '4 ατόμων',
+                price: '36.00',
+                type: 'category'
+            }
+        ]
+    },
+    {
+        sectionName: 'Τα γλυκά μας',
+        sectionContent: [
+            {
+                id: 124,
+                name: 'Καταίφι',
+                price: '21.00',
+            },
+            {
+                id: 125,
+                name: 'Καταίφι με παγωτό',
+                price: '5.50',
+            },
+            {
+                id: 126,
+                name: 'Κορμός',
+                price: '2.50',
+            },
+            {
+                id: 127,
+                name: 'Σοκολατόπιτα',
+                price: '21.00',
+            },
+            {
+                id: 128,
+                name: 'Παγωτό',
+                description: 'Γεύσεις:Sokolöata gOLD, Φράουλα, κανέλα σταφίδα',
+                price: '2.50',
             },
         ]
     },
@@ -642,7 +710,7 @@ export const kava: Section[] = [
                 id: 71,
                 name: '',
                 category: '500ml',
-                price: '6.50',
+                price: '7.00',
                 type: 'category'
             },
             {
