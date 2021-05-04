@@ -103,66 +103,6 @@ export const kouzina: Section[] = [
         ]
     },
     {
-        sectionName: 'Για μερακλήδες',
-        sectionContent: [
-            {
-                id: 118,
-                name: 'Παστουρμάς',
-                price: '5.00',
-            },
-            {
-                id: 119,
-                name: 'Απάκι',
-                price: '5.00',
-            },
-            {
-                id: 120,
-                name: 'Σουτζούκι',
-                price: '5.00',
-            },
-            {
-                id: 121,
-                name: 'Καβουρμάς',
-                price: '5.00',
-            },
-            {
-                id: 122,
-                name: 'Η ποικιλία του μερακλή',
-                price: '9.00',
-            },
-        ]
-    },
-    {
-        sectionName: 'Τηγανιές',
-        sectionContent: [
-            {
-                id: 14,
-                name: 'Τηγανιά κοτόπουλο αλα κρέμ',
-                description: 'Με πιπεριές και μπείκον',
-                price: '7.80',
-            },
-            {
-                id: 15,
-                name: 'Τηγανιά κοτόπουλο',
-                description: 'Σβησμένη με μαστίχα',
-                price: '7.80',
-            },
-            {
-                id: 16,
-                name: 'Τηγανιά χοιρινή "μεθυσμένη"',
-                description: 'Σβησμένη με κρασί και σως φέτας',
-                price: '7.80',
-            },
-            {
-                id: 123,
-                name: 'Τηγανιά"',
-                description: 'με ποικιλία μανιταριών και ανθότυρο',
-                price: '7.00',
-                isVegeterian: true,
-            },
-        ]
-    },
-    {
         sectionName: 'Μεζεκλίκια',
         sectionContent: [
             {
@@ -254,6 +194,36 @@ export const kouzina: Section[] = [
             },
         ]
     },
+    {
+        sectionName: 'Για μερακλήδες',
+        sectionContent: [
+            {
+                id: 118,
+                name: 'Παστουρμάς',
+                price: '5.00',
+            },
+            {
+                id: 119,
+                name: 'Απάκι',
+                price: '5.00',
+            },
+            {
+                id: 120,
+                name: 'Σουτζούκι',
+                price: '5.00',
+            },
+            {
+                id: 121,
+                name: 'Καβουρμάς',
+                price: '5.00',
+            },
+            {
+                id: 122,
+                name: 'Η ποικιλία του μερακλή',
+                price: '9.00',
+            },
+        ]
+    },
     // {
     //     sectionName: 'Θαλασσινα',
     //     isNew: true,
@@ -268,6 +238,36 @@ export const kouzina: Section[] = [
     //         },
     //     ]
     // },
+    {
+        sectionName: 'Τηγανιές',
+        sectionContent: [
+            {
+                id: 14,
+                name: 'Τηγανιά κοτόπουλο αλα κρέμ',
+                description: 'Με πιπεριές και μπείκον',
+                price: '7.80',
+            },
+            {
+                id: 15,
+                name: 'Τηγανιά κοτόπουλο',
+                description: 'Σβησμένη με μαστίχα',
+                price: '7.80',
+            },
+            {
+                id: 16,
+                name: 'Τηγανιά χοιρινή "μεθυσμένη"',
+                description: 'Σβησμένη με κρασί και σως φέτας',
+                price: '7.80',
+            },
+            {
+                id: 123,
+                name: 'Τηγανιά"',
+                description: 'με ποικιλία μανιταριών και ανθότυρο',
+                price: '7.00',
+                isVegeterian: true,
+            },
+        ]
+    },
     {
         sectionName: 'Σχαρα',
         sectionContent: [
@@ -356,7 +356,6 @@ export const kouzina: Section[] = [
             {
                 id: 124,
                 name: 'Καταίφι',
-                price: '21.00',
             },
             {
                 id: 125,
@@ -371,7 +370,6 @@ export const kouzina: Section[] = [
             {
                 id: 127,
                 name: 'Σοκολατόπιτα',
-                price: '21.00',
             },
             {
                 id: 128,
