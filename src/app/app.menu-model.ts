@@ -715,7 +715,7 @@ export const kava: Section[] = [
                 id: 72,
                 name: '',
                 category: '1 λίτρο',
-                price: '13.00',
+                price: '14.00',
                 type: 'category'
             },
             {
