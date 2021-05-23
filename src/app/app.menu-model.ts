@@ -374,7 +374,7 @@ export const kouzina: Section[] = [
             {
                 id: 128,
                 name: 'Παγωτό',
-                description: 'Γεύσεις:Sokolöata gOLD, Φράουλα, κανέλα σταφίδα',
+                description: 'Γεύσεις: Σοκολάτα GOLD, Φράουλα, κανέλα σταφίδα',
                 price: '2.50',
             },
         ]
