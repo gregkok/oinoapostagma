@@ -16,9 +16,7 @@ export class FirstImageComponent implements OnInit {
 
   ngOnInit() {
     this.maxHeight = this.window.innerHeight - 370;
-    console.log(this.maxHeight);
     this.isMobile = this.window.innerWidth <= 420;
-    console.log('isMobile', this.isMobile);
   }
 
 }
