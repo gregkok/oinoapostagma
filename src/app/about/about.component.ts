@@ -41,4 +41,7 @@ export class AboutComponent implements OnInit {
     this.showAboutUsForm = !this.showAboutUsForm;
   }
 
+  onSubmit() {
+    this.userService.saveAboutUs(this.aboutUs).subscribe(result => this.aboutUsForm());
+  }
 }
