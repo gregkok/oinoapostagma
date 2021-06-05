@@ -14,7 +14,8 @@ export class FirstImageComponent implements OnInit {
   constructor(private windowRef: WindowRefService) { }
 
   ngOnInit() {
-    this.isMobile = this.window.innerWidth <= 767;
+    this.isMobile = this.window.innerWidth <= 420;
+    console.log('isMobile', this.isMobile);
   }
 
 }

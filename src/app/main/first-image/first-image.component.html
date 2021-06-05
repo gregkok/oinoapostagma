@@ -1,8 +1,12 @@
-<div class="image">
-    <img *ngIf="isMobile" src="assets/images/trapeziWeb.jpg" alt="">
-    <img *ngIf="!isMobile" src="assets/images/trapeziWebDesktop.jpg" alt="">
+<div *ngIf="isMobile" class="imageMobile">
+    <img class="mobileVersion" *ngIf="isMobile" src="assets/videos/oinovideoMObileview.gif" alt="">
     <div class="tag-word">
         <p id="delay">#oinoapostagmaisonparea</p>
     </div>
 </div>
-
+<div *ngIf="!isMobile" class="imageDesktop">
+    <img  *ngIf="!isMobile" src="assets/videos/oinovideoDesktopview.gif" alt="">
+    <div class="tag-word">
+        <p id="delay">#oinoapostagmaisonparea</p>
+    </div>
+</div>
