@@ -6,15 +6,10 @@ div {
   display: block;
 }
 
-.imageMobile {
+.image {
   display: flex;
   position: inherit;
   align-items: center;
-  height: 85vh;
-
-  .mobileVersion {
-    max-height: 567px;
-  }
 }
 
 .imageDesktop {
