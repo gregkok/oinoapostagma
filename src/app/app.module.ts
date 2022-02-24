@@ -19,6 +19,7 @@ import { AboutComponent } from './about/about.component';
 import { LoadingLandingComponent } from './loading-landing/loading-landing.component';
 import { WindowRefService } from './service/window-ref.service';
 import { GalleryComponent } from './gallery/gallery.component';
+import { EspaComponent } from './main/espa/espa.component';
 
 const appRoutes: Routes = [
   { path: 'menu', component: MenuPageComponent },
@@ -51,6 +52,7 @@ const appRoutes: Routes = [
     AboutComponent,
     LoadingLandingComponent,
     GalleryComponent,
+    EspaComponent,
   ],
   providers: [WindowRefService],
   bootstrap: [AppComponent]

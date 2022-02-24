@@ -90,6 +90,10 @@ h4 {
       border-bottom: 1px solid #fff;
     }
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .specialOpeningHours {
   padding-top: 4px;
@@ -97,6 +101,51 @@ h4 {
   color: #fff;
   opacity: .7;
 }
+
+
+//programa style start
+.programma-common {
+  margin-top: 20px;
+  width: fit-content;
+
+}
+
+.eu-flag-container {
+  display: flex;
+  flex-direction: column;
+  width: 90px
+}
+
+.eu-flag-inline {
+  flex-direction: row;
+}
+
+  .eu-flag {
+    width: 70px;
+    height: auto;
+    align-self: center;
+  }
+
+  .espa {
+    width: 120px;
+    height: auto;
+    align-self: center;
+  }
+
+  .epanek {
+    width: 120px;
+    height: auto;
+    align-self: center;
+  }
+
+  .eu-flag-text {
+    font-size: 7px;
+    margin-bottom: 0px;
+  }
+
+//programa style end
+
+
 
 @media (min-width: 576px) {
   .containerz {
